@@ -9,21 +9,26 @@
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.atelier-informatique-potvin.ca">
     
+    <!-- Open Graph -->
     <meta property="og:title" content="Patrick Potvin - Expert informatique depuis 1984">
     <meta property="og:description" content="Service informatique à domicile patient et professionnel. Réparation, cours, sécurité.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.atelier-informatique-potvin.ca">
     <meta property="og:locale" content="fr_CA">
     
+    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Patrick Potvin - Expert informatique depuis 1984">
     <meta name="twitter:description" content="Service informatique à domicile patient et professionnel.">
     
+    <!-- Favicons -->
     <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23007acc'/><text y='.9em' font-size='90'>💻</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23007acc'/><text y='.9em' font-size='90'>💻</text></svg>">
     
+    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
+    <!-- Schema.org -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -62,7 +67,7 @@
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Considérez d'ajouter des polices de repli ou une police Google Font */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             color: #ffffff;
             font-size: 18px;
@@ -518,3 +523,730 @@
             height: 80px;
             background: linear-gradient(135deg, #3498db, #2980b9);
             border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        .service h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .service p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #7ee787;
+            margin-bottom: 1.5rem;
+            background: rgba(46, 160, 67, 0.15);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #2ea043;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #f7931e;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 3rem;
+            color: #f7931e;
+            font-weight: bold;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #e6edf3;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #58a6ff;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #f7931e, #e67e22);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+        }
+
+        .phone-big {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #f7931e;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .phone-big:hover {
+            color: #ffb347;
+            transform: scale(1.05);
+        }
+
+        /* ASSISTANCE SECTION */
+        .assistance {
+            background: #161b22;
+            color: white;
+        }
+
+        .assistance-buttons {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
+        }
+
+        .btn-download:hover {
+            background: linear-gradient(135deg, #20c997, #28a745);
+            transform: translateY(-3px);
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #21262d;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: #161b22;
+                padding: 1rem;
+                border-top: 1px solid #30363d;
+                flex-direction: column;
+                gap: 0.5rem;
+                z-index: 9999;
+            }
+
+            .nav-menu.active {
+                display: flex;
+            }
+
+            .nav-menu a {
+                padding: 1rem;
+                border-radius: 8px;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .logo-icon {
+                width: 60px;
+                height: 45px;
+                font-size: 1.5rem;
+            }
+
+            nav {
+                padding: 1rem 0;
+                min-height: 70px;
+            }
+
+            .hero {
+                padding: 110px 0 60px;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                min-width: auto;
+                text-align: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .stat {
+                min-width: 100px;
+            }
+
+            .hero-cta {
+                justify-content: center;
+            }
+
+            .timeline {
+                gap: 1.5rem;
+            }
+
+            .timeline-item {
+                min-width: 120px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .phone-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            .assistance-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-photo {
+                flex: none;
+            }
+
+            .photo-frame {
+                width: 200px;
+                height: 200px;
+                font-size: 6rem;
+            }
+
+            .timeline {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        /* ANIMATIONS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav role="navigation" aria-label="Navigation principale">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        💻
+                    </div>
+                    <span>Atelier Informatique Potvin</span>
+                </a>
+                
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <a href="tel:8193802999" class="phone-btn">
+                    <i class="fas fa-phone"></i> (819) 380-2999
+                </a>
+                
+                <button class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            ❤️ Passionné depuis l'âge de 9 ans
+                        </div>
+                        <h1>Salut, moi c'est Patrick !<br>Votre expert informatique de confiance</h1>
+                        <p class="hero-subtitle">
+                            À 12 ans, je partageais déjà mes connaissances • 41 ans plus tard, je continue !<br>
+                            L'informatique expliquée simplement, à votre rythme.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">41</span>
+                                <span class="stat-label">Années d'expérience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2500+</span>
+                                <span class="stat-label">Clients aidés</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7j</span>
+                                <span class="stat-label">Disponible</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta">
+                            <a href="tel:8193802999" class="btn btn-primary">
+                                <i class="fas fa-phone"></i> Appelez maintenant
+                            </a>
+                            <a href="#services" class="btn btn-secondary">
+                                <i class="fas fa-info-circle"></i> Mes services
+                            </a>
+                            <a href="#paiement" class="btn btn-secondary">
+                                💳 Payer en ligne
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-photo">
+                        <div class="photo-frame">
+                            👨‍💻
+                        </div>
+                        <p class="photo-caption">
+                            <i class="fas fa-user-tie"></i> Patrick Potvin<br>
+                            <span style="opacity: 0.8;">Fondateur • Atelier Informatique Potvin</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMS SECTION -->
+        <section class="section problems">
+            <div class="container">
+                <h2 class="section-title">J'comprends vos tracas informatiques</h2>
+                <p class="section-subtitle">Après 41 ans dans le domaine, j'ai vu tous les problèmes possibles. Et j'ai surtout appris à les expliquer simplement !</p>
+                
+                <div class="problems-grid fade-in">
+                    <div class="problem">
+                        <h3><i class="fas fa-snail"></i> Votre ordinateur est lent comme une tortue ?</h3>
+                        <p>Ça prend 10 minutes pour démarrer, tout rame, et vous avez envie de le lancer par la fenêtre ? Je comprends votre frustration, et j'ai la solution !</p>
+                    </div>
+                    <div class="problem">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Des messages bizarres qui s'affichent ?</h3>
+                        <p>Pop-ups partout, messages d'arnaque, vous avez peur de cliquer sur quoi que ce soit ? Vous avez raison d'être prudent, on va régler ça ensemble.</p>
+                    </div>
+                    <div class="problem">
+                        <h3><i class="fas fa-question-circle"></i> Vous vous sentez dépassé par la technologie ?</h3>
+                        <p>Tablette, smartphone, ordinateur... Tout va trop vite et personne ne prend le temps de bien vous expliquer ? C'est mon expertise !</p>
+                    </div>
+                </div>
+
+                <div class="solution-box fade-in">
+                    <h3><i class="fas fa-handshake"></i> Moi, Patrick, je règle vos problèmes avec le sourire</h3>
+                    <p>Depuis 1984, j'aide des gens comme vous à apprivoiser leurs appareils. Je me déplace chez vous, je prends tout le temps nécessaire, et je vous explique tout en bon français. Aucune question est trop bête, aucun problème trop simple. Mon travail, c'est de vous redonner confiance !</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="section story">
+            <div class="container">
+                <h2 class="section-title">Mon histoire avec l'informatique</h2>
+                <p class="section-subtitle">Pourquoi j'ai cette patience naturelle pour vous enseigner</p>
+                
+                <div class="story-content fade-in">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-number start">9 ans</span>
+                            <div class="timeline-label">Mes débuts</div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-number teach">12 ans</span>
+                            <div class="timeline-label">J'aidais déjà</div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-number now">41 ans</span>
+                            <div class="timeline-label">Plus tard...</div>
+                        </div>
+                    </div>
+                    
+                    <p style="font-size: 1.2rem; color: #e6edf3; line-height: 1.8; margin-bottom: 2rem;">
+                        <strong>À 9 ans</strong>, je découvrais mes premiers ordinateurs. <strong>À 12 ans</strong>, j'étais déjà celui vers qui tout le monde se tournait dans mon réseau pour comprendre cette "nouvelle technologie".
+                    </p>
+                    <p style="font-size: 1.2rem; color: #e6edf3; line-height: 1.8; margin-bottom: 2rem;">
+                        <strong>J'ai grandi avec la technologie</strong> : des premiers PC aux smartphones, du dial-up à la fibre optique, des disquettes au cloud. J'ai vécu chaque évolution, chaque révolution.
+                    </p>
+                    <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border-left: 5px solid #58a6ff; border: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 1.2rem; color: #79c0ff; font-weight: 600;">
+                            Cette passion de partager mes connaissances ? Elle date de mes 12 ans. 41 ans plus tard, elle brûle encore plus fort !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title">Comment je peux vous aider</h2>
+                <p class="section-subtitle">Des services pensés pour vous, avec la patience que vous méritez</p>
+                
+                <div class="services-grid fade-in">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Réparation Ordinateur</h3>
+                        <p>Ordinateur qui plante, qui démarre plus, qui fait des affaires bizarres ? Je trouve le bobo et je le règle, en vous expliquant ce que je fais étape par étape.</p>
+                        <div class="service-price">À partir de 75$ • Diagnostic gratuit</div>
+                        <a href="tel:8193802999" class="btn btn-primary">Patrick, venez voir ça !</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Service à Domicile</h3>
+                        <p>Je viens chez vous avec tout mon kit d'outils. Vous restez confortable dans votre salon pendant que je m'occupe de vos tracas informatiques.</p>
+                        <div class="service-price">Déplacement: 25$ seulement</div>
+                        <a href="tel:8193802999" class="btn btn-primary">Prenez rendez-vous</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Protection Anti-Virus</h3>
+                        <p>Fini les pop-ups et les arnaques ! J'installe un bon antivirus et je vous montre comment naviguer sur internet sans se faire avoir.</p>
+                        <div class="service-price">Package complet: 125$</div>
+                        <a href="tel:8193802999" class="btn btn-primary">Protégez-moi Patrick !</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Cours Personnalisés</h3>
+                        <p>J'vous montre comment utiliser votre ordinateur, tablette ou cellulaire à votre rythme. On se concentre sur ce qui vous intéresse vraiment !</p>
+                        <div class="service-price">60$ de l'heure • Pas de pression</div>
+                        <a href="tel:8193802999" class="btn btn-primary">Apprenez avec Patrick</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="temoignages" class="section testimonials">
+            <div class="container">
+                <h2 class="section-title">Ce que mes clients disent de moi</h2>
+                <p class="section-subtitle">41 ans d'expérience, c'est beaucoup de monde heureux !</p>
+                
+                <div class="testimonials-grid fade-in">
+                    <div class="testimonial">
+                        <p class="testimonial-text">Patrick est d'une patience d'ange ! Il m'a appris à utiliser ma tablette sans jamais me faire sentir niaiseuse. Je le recommande à tous mes amis.</p>
+                        <p class="testimonial-author">- Marie-Claire, 68 ans</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">Mon ordinateur était plein de cochonneries. Patrick a tout nettoyé et m'a montré comment éviter ça. Service parfait, à domicile en plus !</p>
+                        <p class="testimonial-author">- Robert, 72 ans</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">Enfin quelqu'un qui explique l'informatique en français ! Patrick prend le temps et ne vous fait jamais sentir ignorant. Un vrai pro avec du cœur.</p>
+                        <p class="testimonial-author">- Louise, 61 ans</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ASSISTANCE SECTION -->
+        <section class="section assistance">
+            <div class="container">
+                <h2 class="section-title">Assistance à distance</h2>
+                <p class="section-subtitle">Téléchargez l'outil sécurisé pour permettre à Patrick de vous aider immédiatement, à distance.</p>
+                
+                <div class="assistance-buttons fade-in">
+                    <a href="tel:8193802999" class="btn-download" onclick="downloadForWindows()">
+                        🪟 Télécharger pour Windows
+                    </a>
+                    <a href="tel:8193802999" class="btn-download" onclick="downloadForMac()">
+                        🍎 Télécharger pour macOS
+                    </a>
+                </div>
+                
+                <p style="margin-top: 2rem; color: #bbb; font-size: 0.95rem;">
+                    <strong>Important :</strong> Appelez Patrick au (819) 380-2999 avant de télécharger. Il vous guidera étape par étape.
+                </p>
+            </div>
+        </section>
+
+        <!-- PAYMENT SECTION -->
+        <section id="paiement" class="section" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white;">
+            <div class="container">
+                <h2 class="section-title">Paiement en ligne sécurisé</h2>
+                <p class="section-subtitle">Payez votre facture facilement et en toute sécurité</p>
+                
+                <div style="text-align: center; margin-top: 2rem;">
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
+                        <strong>Numéro de facture requis</strong><br>
+                        Vous le trouverez sur votre facture papier ou email
+                    </p>
+                    
+                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; max-width: 500px; margin: 0 auto;">
+                        <h3 style="margin-bottom: 1rem;">Méthodes de paiement acceptées :</h3>
+                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px;">💳 Visa</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px;">💳 Mastercard</span>
+                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px;">🏦 Virement</span>
+                        </div>
+                        
+                        <a href="tel:8193802999" class="btn btn-secondary" style="background: white; color: #27ae60; border: none;">
+                            <i class="fas fa-phone"></i> Appelez pour payer maintenant
+                        </a>
+                        
+                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                            Patrick vous donnera le lien de paiement sécurisé par téléphone
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Appelez Patrick pour régler vos tracas !</h2>
+                
+                <a href="tel:8193802999" class="phone-big">
+                    <i class="fas fa-phone"></i> (819) 380-2999
+                </a>
+                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #e6edf3;">Lun-Ven 8h-17h • Sam 9h-16h • Dim urgences • Diagnostic gratuit</p>
+                
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong>Email</strong><br>
+                            <span id="email-protection">Cliquez pour révéler</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong>Service</strong><br>
+                            À domicile dans votre région
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Horaires</strong><br>
+                            <span style="font-size: 0.9rem;">
+                                Lun-Ven : 8h00-17h00<br>
+                                Sam : 9h00-16h00<br>
+                                Dim : Urgences seulement
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="margin-top: 3rem;">
+                    <a href="tel:8193802999" class="btn btn-primary" style="font-size: 1.3rem; margin-right: 1rem;">
+                        <i class="fas fa-phone"></i> Appelez Patrick maintenant
+                    </a>
+                </div>
+                
+                <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.9; color: #e6edf3;">
+                    <i class="fas fa-info-circle"></i> Dimanche : Urgences seulement • NEQ: 2281042178
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Atelier Informatique Potvin (AIP) - Patrick Potvin, à votre service depuis 1984 ❤️</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+                NEQ: 2281042178 • <a href="tel:8193802999" style="color: #58a6ff;">(819) 380-2999</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.getElementById('mobile-menu');
+            const navMenu = document.getElementById('nav-menu');
+            
+            if (mobileMenuBtn && navMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    navMenu.classList.toggle('active');
+                    
+                    // Change hamburger icon
+                    const icon = mobileMenuBtn.querySelector('i');
+                    if (navMenu.classList.contains('active')) {
+                        icon.className = 'fas fa-times';
+                    } else {
+                        icon.className = 'fas fa-bars';
+                    }
+                });
+                
+                // Close menu when clicking on a link
+                navMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', function() {
+                        navMenu.classList.remove('active');
+                        mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
+                    });
+                });
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Email protection
+        document.getElementById('email-protection').addEventListener('click', function() {
+            const email = 'patrick' + '@' + 'atelier-informatique-potvin.ca';
+            this.innerHTML = '<a href="mailto:' + email + '" style="color: #58a6ff;">' + email + '</a>';
+        });
+
+        // Download functions (placeholder - call Patrick instead)
+        function downloadForWindows() {
+            alert('Appelez Patrick au (819) 380-2999 pour obtenir le logiciel d\'assistance Windows. Il vous guidera dans l\'installation.');
+        }
+
+        function downloadForMac() {
+            alert('Appelez Patrick au (819) 380-2999 pour obtenir le logiciel d\'assistance macOS. Il vous guidera dans l\'installation.');
+        }
+
+        // Initialize animations and other features
+        document.addEventListener('DOMContentLoaded', function() {
+            // Additional initialization can go here
+            console.log('Site Atelier Informatique Potvin chargé avec succès!');
+        });
+    </script>
+</body>
+</html>
