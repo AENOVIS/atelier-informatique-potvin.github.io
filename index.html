@@ -1,0 +1,2097 @@
+.robit-notification {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #dc3545;
+            color: white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            display: none;
+        }
+
+        /* FORMULAIRE DE CONTACT */
+        .contact-form-section {
+            background: #f8f9fa;
+            padding: 80px 0;
+        }
+
+        .contact-form-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .contact-form-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .contact-form-title h2 {
+            font-size: 2.5rem;
+            color: #2d3748;
+            margin-bottom: 20px;
+        }
+
+        .contact-form-title p {
+            font-size: 1.2rem;
+            color: #4a5568;
+        }
+
+        .contact-form {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #4a5568;
+        }
+
+        .form-input, .form-select, .form-textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input:focus, .form-select:focus, .form-textarea:focus {
+            outline: none;
+            border-color: #00d4aa;
+        }
+
+        .form-radio-group {
+            display: flex;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .form-radio-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+        }
+
+        .form-notice {
+            background: #edf2f7;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #4a5568;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        .footer {
+            background: #0d1117;
+            color: #8b949e;
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid #21262d;
+        }
+
+        /* ANIMATIONS */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .robit-widget.show {
+            display: flex;
+            animation: slideInUp 0.3s ease-out;
+        }
+
+        @keyframes slideInUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0.3; }
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+
+            .nav-menu {
+                display: none;
+            }
+
+            .logo {
+                font-size: 1.3rem;
+            }
+
+            .logo-icon {
+                width: 60px;
+                height: 45px;
+            }
+
+            nav {
+                padding: 1rem 0;
+                min-height: 70px;
+            }
+
+            .hero {
+                padding: 110px 0 60px;
+            }
+
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                min-width: auto;
+                text-align: center;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .stat {
+                min-width: 100px;
+            }
+
+            .hero-cta {
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .btn-ai {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            .timeline {
+                gap: 1.5rem;
+            }
+
+            .timeline-item {
+                min-width: 120px;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+
+            .phone-btn {
+                padding: 10px 20px;
+                font-size: 1rem;
+            }
+
+            .robit-widget {
+                width: calc(100vw - 40px);
+                height: calc(100vh - 100px);
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+            }
+            
+            .robit-float-button {
+                bottom: 15px;
+                right: 15px;
+                width: 55px;
+                height: 55px;
+                font-size: 22px;
+            }
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-photo {
+                flex: none;
+            }
+
+            .photo-frame {
+                width: 200px;
+                height: 200px;
+            }
+
+            .timeline {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <img src="logo-aip.png" alt="AIP Logo">
+                    </div>
+                    <span>Atelier Informatique Potvin</span>
+                </a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+                <a href="tel:8193802999" class="phone-btn" onclick="trackPhoneClick()">
+                    <i class="fas fa-phone"></i> (819) 380-2999
+                </a>
+                
+                <button class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-heart"></i> Passionné depuis l'âge de 9 ans
+                        </div>
+                        <h1>Salut, moi c'est Patrick !<br>Votre expert informatique de confiance</h1>
+                        <p class="hero-subtitle">
+                            À 12 ans, je partageais déjà mes connaissances • 41 ans plus tard, je continue !<br>
+                            L'informatique expliquée simplement, à votre rythme.
+                        </p>
+                        
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">41</span>
+                                <span class="stat-label">Années d'expérience</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">2500+</span>
+                                <span class="stat-label">Clients aidés</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">7j</span>
+                                <span class="stat-label">Disponible</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-cta">
+                            <a href="tel:8193802999" class="btn btn-primary" onclick="trackPhoneClick()">
+                                <i class="fas fa-phone"></i> Appelez maintenant
+                            </a>
+                            <a href="#services" class="btn btn-secondary">
+                                <i class="fas fa-info-circle"></i> Mes services
+                            </a>
+                            <a href="#" class="btn btn-ai" onclick="connectToRobit()" id="robitButton">
+                                <i class="fas fa-robot"></i> Assistant Robit
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-photo">
+                        <div class="photo-frame">
+                            <img src="patrick-photo.jpg" alt="Patrick Potvin">
+                        </div>
+                        <p class="photo-caption">
+                            <i class="fas fa-user-tie"></i> Patrick Potvin<br>
+                            <span style="opacity: 0.8;">Fondateur • Atelier Informatique Potvin</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMS SECTION -->
+        <section class="section problems">
+            <div class="container">
+                <h2 class="section-title">J'comprends vos tracas informatiques</h2>
+                <p class="section-subtitle">Après 41 ans dans le domaine, j'ai vu tous les problèmes possibles. Et j'ai surtout appris à les expliquer simplement !</p>
+                
+                <div class="problems-grid fade-in">
+                    <div class="problem">
+                        <h3><i class="fas fa-snail"></i> Votre ordinateur est lent comme une tortue ?</h3>
+                        <p>Ça prend 10 minutes pour démarrer, tout rame, et vous avez envie de le lancer par la fenêtre ? Je comprends votre frustration, et j'ai la solution !</p>
+                    </div>
+                    <div class="problem">
+                        <h3><i class="fas fa-exclamation-triangle"></i> Des messages bizarres qui s'affichent ?</h3>
+                        <p>Pop-ups partout, messages d'arnaque, vous avez peur de cliquer sur quoi que ce soit ? Vous avez raison d'être prudent, on va régler ça ensemble.</p>
+                    </div>
+                    <div class="problem">
+                        <h3><i class="fas fa-question-circle"></i> Vous vous sentez dépassé par la technologie ?</h3>
+                        <p>Tablette, smartphone, ordinateur... Tout va trop vite et personne ne prend le temps de bien vous expliquer ? C'est mon expertise !</p>
+                    </div>
+                </div>
+
+                <div class="solution-box fade-in">
+                    <h3><i class="fas fa-handshake"></i> Moi, Patrick, je règle vos problèmes avec le sourire</h3>
+                    <p>Depuis 1984, j'aide des gens comme vous à apprivoiser leurs appareils. Je me déplace chez vous, je prends tout le temps nécessaire, et je vous explique tout en bon français. Aucune question est trop bête, aucun problème trop simple. Mon travail, c'est de vous redonner confiance !</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- STORY SECTION -->
+        <section class="section story">
+            <div class="container">
+                <h2 class="section-title">Mon histoire avec l'informatique</h2>
+                <p class="section-subtitle">Pourquoi j'ai cette patience naturelle pour vous enseigner</p>
+                
+                <div class="story-content fade-in">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="timeline-number start">9 ans</span>
+                            <div class="timeline-label">Mes débuts</div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-number teach">12 ans</span>
+                            <div class="timeline-label">J'aidais déjà</div>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="timeline-number now">41 ans</span>
+                            <div class="timeline-label">Plus tard...</div>
+                        </div>
+                    </div>
+                    
+                    <p style="font-size: 1.2rem; color: #e6edf3; line-height: 1.8; margin-bottom: 2rem;">
+                        <strong>À 9 ans</strong>, je découvrais mes premiers ordinateurs. <strong>À 12 ans</strong>, j'étais déjà celui vers qui tout le monde se tournait dans mon réseau pour comprendre cette "nouvelle technologie".
+                    </p>
+                    <p style="font-size: 1.2rem; color: #e6edf3; line-height: 1.8; margin-bottom: 2rem;">
+                        <strong>J'ai grandi avec la technologie</strong> : des premiers PC aux smartphones, du dial-up à la fibre optique, des disquettes au cloud. J'ai vécu chaque évolution, chaque révolution.
+                    </p>
+                    <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border-left: 5px solid #58a6ff; border: 1px solid rgba(255,255,255,0.1);">
+                        <p style="font-size: 1.2rem; color: #79c0ff; font-weight: 600;">
+                            Cette passion de partager mes connaissances ? Elle date de mes 12 ans. 41 ans plus tard, elle brûle encore plus fort !
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="section services">
+            <div class="container">
+                <h2 class="section-title">Comment je peux vous aider</h2>
+                <p class="section-subtitle">Des services pensés pour vous, avec la patience que vous méritez</p>
+                
+                <div class="services-grid fade-in">
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h3>Réparation Ordinateur</h3>
+                        <p>Ordinateur qui plante, qui démarre plus, qui fait des affaires bizarres ? Je trouve le bobo et je le règle, en vous expliquant ce que je fais étape par étape.</p>
+                        <div class="service-price">À partir de 75$ • Diagnostic gratuit</div>
+                        <a href="tel:8193802999" class="btn btn-primary" onclick="trackPhoneClick(); gtag_report_conversion();">Patrick, venez voir ça !</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Service à Domicile</h3>
+                        <p>Je viens chez vous avec tout mon kit d'outils. Vous restez confortable dans votre salon pendant que je m'occupe de vos tracas informatiques.</p>
+                        <div class="service-price">Déplacement: 25$ seulement</div>
+                        <a href="tel:8193802999" class="btn btn-primary" onclick="trackPhoneClick(); gtag_report_conversion();">Prenez rendez-vous</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Protection Anti-Virus</h3>
+                        <p>Fini les pop-ups et les arnaques ! J'installe un bon antivirus et je vous montre comment naviguer sur internet sans se faire avoir.</p>
+                        <div class="service-price">Package complet: 125$</div>
+                        <a href="tel:8193802999" class="btn btn-primary" onclick="trackPhoneClick(); gtag_report_conversion();">Protégez-moi Patrick !</a>
+                    </div>
+
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Cours Personnalisés</h3>
+                        <p>J'vous montre comment utiliser votre ordinateur, tablette ou cellulaire à votre rythme. On se concentre sur ce qui vous intéresse vraiment !</p>
+                        <div class="service-price">60$ de l'heure • Pas de pression</div>
+                        <a href="tel:8193802999" class="btn btn-primary" onclick="trackPhoneClick(); gtag_report_conversion();">Apprenez avec Patrick</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS SECTION -->
+        <section id="temoignages" class="section testimonials">
+            <div class="container">
+                <h2 class="section-title">Ce que mes clients disent de moi</h2>
+                <p class="section-subtitle">41 ans d'expérience, c'est beaucoup de monde heureux !</p>
+                
+                <div class="testimonials-grid fade-in">
+                    <div class="testimonial">
+                        <p class="testimonial-text">Patrick est d'une patience d'ange ! Il m'a appris à utiliser ma tablette sans jamais me faire sentir niaiseuse. Je le recommande à tous mes amis.</p>
+                        <p class="testimonial-author">- Marie-Claire, 68 ans</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">Mon ordinateur était plein de cochonneries. Patrick a tout nettoyé et m'a montré comment éviter ça. Service parfait, à domicile en plus !</p>
+                        <p class="testimonial-author">- Robert, 72 ans</p>
+                    </div>
+                    <div class="testimonial">
+                        <p class="testimonial-text">Enfin quelqu'un qui explique l'informatique en français ! Patrick prend le temps et ne vous fait jamais sentir ignorant. Un vrai pro avec du cœur.</p>
+                        <p class="testimonial-author">- Louise, 61 ans</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">Appelez Patrick pour régler vos tracas !</h2>
+                
+                <a href="tel:8193802999" class="phone-big" onclick="trackPhoneClick()">
+                    <i class="fas fa-phone"></i> (819) 380-2999
+                </a>
+                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #e6edf3;">Lun-Ven 8h-17h • Sam 9h-16h • Dim urgences • Diagnostic gratuit</p>
+                
+                <div class="contact-info fade-in">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <strong>Email</strong><br>
+                            patrick@atelier-informatique-potvin.ca
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <strong>Service</strong><br>
+                            À domicile dans votre région
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <strong>Horaires</strong><br>
+                            <span style="font-size: 0.9rem;">
+                                Lun-Ven : 8h00-17h00<br>
+                                Sam : 9h00-16h00<br>
+                                Dim : Urgences seulement
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="tel:8193802999" class="btn btn-primary" style="font-size: 1.3rem; margin-top: 2rem;" onclick="trackPhoneClick(); gtag_report_conversion();">
+                    <i class="fas fa-phone"></i> Appelez Patrick maintenant - C'est gratuit de jaser !
+                </a>
+                <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9; color: #e6edf3;">
+                    <i class="fas fa-info-circle"></i> Dimanche : Urgences seulement
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7; color: #c9d1d9;">
+                    <i class="fas fa-eye"></i> Site optimisé en mode sombre pour le confort visuel
+                </p>
+            </div>
+        </section>
+
+        <!-- FORMULAIRE DE CONTACT -->
+        <section class="contact-form-section">
+            <div class="contact-form-container">
+                <div class="contact-form-title">
+                    <h2>📧 Une question ? Contactez-moi !</h2>
+                    <p>Appelez-moi au <strong>(819) 380-2999</strong> ou envoyez-moi un message</p>
+                </div>
+
+                <form name="contact" method="POST" netlify class="contact-form" onsubmit="gtag_report_conversion();">
+                    <input type="hidden" name="form-name" value="contact">
+                    
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label class="form-label">Votre nom *</label>
+                            <input type="text" name="nom" required class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Votre téléphone *</label>
+                            <input type="tel" name="telephone" required class="form-input" placeholder="(819) 000-0000">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Votre courriel</label>
+                        <input type="email" name="email" class="form-input" placeholder="votre@courriel.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Type de demande *</label>
+                        <select name="sujet" required class="form-select">
+                            <option value="">Sélectionnez votre besoin</option>
+                            <option value="reparation">🔧 Réparation d'ordinateur</option>
+                            <option value="formation">📚 Formation informatique</option>
+                            <option value="assistance">🆘 Assistance technique</option>
+                            <option value="conseil">💡 Conseil d'achat</option>
+                            <option value="autre">❓ Autre demande</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Décrivez votre problème ou besoin *</label>
+                        <textarea name="message" required rows="5" class="form-textarea" placeholder="Expliquez-moi votre situation en quelques mots..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label">Vous préférez être contacté comment ?</label>
+                        <div class="form-radio-group">
+                            <div class="form-radio-item">
+                                <input type="radio" name="contact_preference" value="telephone" checked>
+                                <span>📞 Par téléphone</span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="contact_preference" value="email">
+                                <span>📧 Par courriel</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="form-submit">📨 Envoyer ma demande</button>
+
+                    <div class="form-notice">
+                        🔒 Vos informations restent confidentielles et ne seront utilisées que pour vous contacter.
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- WIDGET ASSISTANT ROBIT -->
+    <div id="robitWidget" class="robit-widget">
+        <div class="robit-widget-header">
+            <i class="fas fa-robot"></i>
+            <span>Robit - Assistant IA</span>
+            <button onclick="toggleRobitWidget()" class="robit-close">×</button>
+        </div>
+        <div class="robit-widget-body">
+            <div class="robit-status">
+                <span class="robit-indicator offline"></span>
+                <span id="robitStatus">Démarrage...</span>
+            </div>
+            <div class="robit-chat" id="robitChat"></div>
+            <div class="robit-input-container">
+                <input type="text" id="robitInput" placeholder="Décrivez votre problème informatique..." maxlength="200">
+                <button onclick="sendToRobit()" id="robitSend">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+            <div class="robit-actions">
+                <button onclick="launchAIPdesk()" class="robit-action-btn btn-aipdesk">
+                    <i class="fas fa-desktop"></i> Connexion AIPdesk (Assistance à distance)
+                </button>
+                <button onclick="downloadAgent()" class="robit-action-btn btn-download">
+                    <i class="fas fa-download"></i> Télécharger Agent AIPdesk
+                </button>
+                <button onclick="showPricing()" class="robit-action-btn btn-pricing">
+                    <i class="fas fa-dollar-sign"></i> Tarifs Assistance Distance
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- BOUTON FLOTTANT D'ASSISTANCE -->
+    <div class="robit-float-button" onclick="toggleRobitWidget()" id="robitFloatBtn">
+        <i class="fas fa-robot"></i>
+        <span class="robit-notification" id="robitNotif">1</span>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Atelier Informatique Potvin (AIP) - Patrick Potvin, à votre service depuis 1984 ❤️</p>
+        </div>
+    </footer>
+
+    <script>
+        // Fonction pour tracker les conversions Google Ads
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17202302756/RLcPCOKhxNoaEKSe2YpA',
+                'event_callback': callback
+            });
+            return false;
+        }
+
+        // Fonction pour tracker les interactions Robit
+        function trackRobitInteraction(action) {
+            gtag('event', 'robit_interaction', {
+                'event_category': 'AI Assistant',
+                'event_label': action,
+                'value': 1
+            });
+        }
+
+        // Fonction pour tracker AIPdesk (MeshCentral)
+        function trackAIPdeskConnection() {
+            gtag('event', 'aipdesk_connection', {
+                'event_category': 'Remote Assistance',
+                'event_label': 'MeshCentral Launch',
+                'value': 1
+            });
+        }
+
+        // Fonction pour tracker les téléchargements
+        function trackAgentDownload() {
+            gtag('event', 'agent_download', {
+                'event_category': 'Downloads',
+                'event_label': 'AIPdesk Agent',
+                'value': 1
+            });
+        }
+
+        // Fonction pour tracker les clics téléphone
+        function trackPhoneClick() {
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17202302756/RLcPCOKhxNoaEKSe2YpA',
+                'event_callback': function() {
+                    console.log('✅ Conversion téléphone enregistrée.');
+                }
+            });
+        }
+
+        // Configuration Robit (Assistant IA)
+        const robitConfig = {
+            isActive: false,
+            isConnected: false,
+            sessionId: null,
+            widgetOpen: false
+        };
+
+        // Configuration AIPdesk (MeshCentral)
+        const aipdeskConfig = {
+            meshUrl: 'https://votre-meshcentral.com', // Remplacez par votre URL MeshCentral
+            agentDownloadUrl: 'https://votre-meshcentral.com/meshagents.ashx?id=3', // URL de téléchargement de l'agent
+            deviceGroup: 'clients-patrick',
+            isConnected: false
+        };
+
+        // Messages prédéfinis de Robit
+        const robitResponses = {
+            welcome: "👋 Salut ! Moi c'est Robit, l'assistant IA de Patrick. Comment puis-je vous aider avec vos problèmes informatiques ? Si besoin, je peux aussi lancer une session d'assistance à distance avec AIPdesk !",
+            slow_computer: "🐌 Ordinateur lent ? Voici quelques vérifications rapides :\n• Redémarrez votre ordinateur\n• Vérifiez l'espace disque disponible\n• Fermez les programmes inutiles\n\nSi le problème persiste, Patrick peut intervenir à distance avec AIPdesk ou se déplacer chez vous !",
+            virus: "🛡️ Problème de sécurité détecté !\n• Ne cliquez sur aucun lien suspect\n• Déconnectez-vous d'internet si nécessaire\n• Je peux lancer AIPdesk pour une assistance immédiate ou appelez Patrick : (819) 380-2999",
+            remote_help: "🖥️ Parfait ! AIPdesk permet à Patrick de voir votre écran et de résoudre vos problèmes à distance, comme s'il était à côté de vous !\n\nCliquez sur 'Connexion AIPdesk' ci-dessous pour démarrer une session d'assistance.",
+            pricing_info: "💰 Tarifs Assistance à Distance :\n\n🆓 GRATUIT :\n• Diagnostic initial (15 min)\n• Évaluation du problème\n\n💵 PAYANT :\n• Réparation complète : 75$/heure\n• Formation personnalisée : 60$/heure\n• Support technique : 50$/heure\n• Installation logiciels : 40$/session\n\n✅ Avantages :\n• Pas de déplacement\n• Intervention immédiate\n• Vous voyez tout ce que fait Patrick\n• Enregistrement de la session disponible",
+            system_requirements: "💻 Compatibilité AIPdesk :\n\n✅ Windows :\n• Windows 10/11 (recommandé)\n• Windows 8.1/7 (supporté)\n• Installation automatique\n• Fonctionne derrière pare-feu\n\n✅ macOS :\n• macOS 10.14+ (Mojave et plus récent)\n• Installation manuelle requise\n• Permissions système nécessaires\n\n🔧 Prérequis :\n• Connexion Internet stable\n• Droits administrateur\n• Autorisation antivirus si demandée\n\n📞 Problème d'installation ? Appelez Patrick : (819) 380-2999",
+            default: "🤔 Je comprends votre problème. Patrick peut vous aider de plusieurs façons :\n• 💬 Continuez à me parler\n• 🖥️ Assistance à distance avec AIPdesk\n• 📞 Appel direct : (819) 380-2999\n• 🚗 Visite à domicile"
+        };
+
+        // Fonction principale de connexion Robit
+        function connectToRobit() {
+            trackRobitInteraction('activation');
+            const button = document.getElementById('robitButton');
+            const icon = button.querySelector('i');
+            
+            if (!robitConfig.isActive) {
+                icon.className = 'fas fa-cog fa-spin';
+                button.innerHTML = '<i class="fas fa-cog fa-spin"></i> Démarrage Robit...';
+                
+                setTimeout(() => {
+                    robitConfig.isActive = true;
+                    robitConfig.isConnected = true;
+                    
+                    button.innerHTML = '<i class="fas fa-robot"></i> Robit Actif';
+                    button.classList.add('connected');
+                    
+                    initializeRobit();
+                    toggleRobitWidget();
+                    
+                }, 2000);
+            } else {
+                toggleRobitWidget();
+            }
+        }
+
+        // Initialisation de Robit
+        function initializeRobit() {
+            const statusElement = document.getElementById('robitStatus');
+            const indicator = document.querySelector('.robit-indicator');
+            
+            if (statusElement) {
+                statusElement.textContent = 'Robit en ligne';
+                indicator.classList.remove('offline');
+                indicator.classList.add('online');
+            }
+            
+            setTimeout(() => {
+                addRobitMessage(robitResponses.welcome, 'ai');
+            }, 500);
+            
+            console.log('✅ Robit initialisé et prêt à assister');
+        }
+
+        // Fonction pour télécharger l'agent AIPdesk
+        function downloadAgent() {
+            trackAgentDownload();
+            
+            addRobitMessage("📥 Téléchargement de l'agent AIPdesk...\n\nL'agent va être téléchargé automatiquement. Une fois installé, Patrick pourra vous assister à distance !", 'ai');
+            
+            // Détecter l'OS et proposer le bon agent
+            const userAgent = navigator.userAgent;
+            let downloadUrl = aipdeskConfig.agentDownloadUrl;
+            let instructions = "";
+            
+            if (userAgent.includes('Windows')) {
+                instructions = "🪟 Instructions Windows :\n1. Exécutez le fichier téléchargé\n2. Acceptez les permissions\n3. L'agent se connecte automatiquement\n4. Patrick peut maintenant vous assister !";
+            } else if (userAgent.includes('Mac')) {
+                instructions = "🍎 Instructions macOS :\n1. Ouvrez le fichier .dmg téléchargé\n2. Glissez l'app dans Applications\n3. Autorisez dans Préférences Système > Sécurité\n4. Lancez l'application\n5. Patrick peut maintenant vous assister !";
+            } else {
+                instructions = "🐧 Instructions Linux :\n1. Rendez le fichier exécutable\n2. Lancez en tant qu'administrateur\n3. Configurez les permissions\n4. Patrick peut maintenant vous assister !";
+            }
+            
+            setTimeout(() => {
+                addRobitMessage(instructions, 'ai');
+                
+                // Simuler le téléchargement (remplacez par votre vraie URL)
+                // window.open(downloadUrl, '_blank');
+                
+                // Pour la démo, on affiche juste un lien
+                addRobitMessage("🔗 Lien de téléchargement : [Agent AIPdesk]\n\n📞 Besoin d'aide pour l'installation ? Appelez Patrick : (819) 380-2999", 'ai');
+            }, 1500);
+        }
+
+        // Fonction pour afficher les tarifs
+        function showPricing() {
+            addRobitMessage(robitResponses.pricing_info, 'ai');
+        }
+
+        // Fonction pour lancer AIPdesk (MeshCentral)
+        function launchAIPdesk() {
+            trackAIPdeskConnection();
+            
+            // Afficher un message de confirmation
+            addRobitMessage("🚀 Lancement d'AIPdesk en cours...\n\nPatrick va pouvoir voir votre écran et vous assister directement. Une nouvelle fenêtre va s'ouvrir.", 'ai');
+            
+            // Simuler le démarrage (remplacez par votre vraie logique MeshCentral)
+            setTimeout(() => {
+                // Option 1: Redirection vers votre MeshCentral
+                const meshUrl = aipdeskConfig.meshUrl + '/meshagents.ashx?id=3'; // Remplacez par votre lien exact
+                
+                // Option 2: Ouvrir directement la console MeshCentral
+                // window.open(aipdeskConfig.meshUrl + '/console', '_blank');
+                
+                addRobitMessage("✅ Session AIPdesk initialisée !\n\nPatrick peut maintenant :\n• Voir votre écran\n• Prendre le contrôle (avec votre permission)\n• Résoudre vos problèmes en temps réel\n• Vous former en direct\n\n📞 Questions ? Appelez : (819) 380-2999", 'ai');
+                
+                // Vous pouvez aussi ouvrir une URL personnalisée pour votre MeshCentral
+                // window.open('https://votre-meshcentral.com/join-session-patrick', '_blank');
+                
+            }, 1500);
+        }
+
+        // Gestion du widget Robit
+        function toggleRobitWidget() {
+            const widget = document.getElementById('robitWidget');
+            const floatBtn = document.getElementById('robitFloatBtn');
+            
+            if (!robitConfig.widgetOpen) {
+                widget.classList.add('show');
+                floatBtn.style.display = 'none';
+                robitConfig.widgetOpen = true;
+                
+                // Masquer la notification
+                const notif = document.getElementById('robitNotif');
+                if (notif) notif.style.display = 'none';
+                
+                trackRobitInteraction('widget_opened');
+                
+            } else {
+                widget.classList.remove('show');
+                setTimeout(() => {
+                    widget.style.display = 'none';
+                    floatBtn.style.display = 'flex';
+                }, 300);
+                robitConfig.widgetOpen = false;
+            }
+        }
+
+        // Envoyer message à Robit
+        function sendToRobit() {
+            const input = document.getElementById('robitInput');
+            const message = input.value.trim();
+            
+            if (!message) return;
+            
+            // Tracker l'interaction
+            trackRobitInteraction('message_sent');
+            
+            // Ajouter message utilisateur
+            addRobitMessage(message, 'user');
+            input.value = '';
+            
+            // Désactiver temporairement l'envoi
+            const sendBtn = document.getElementById('robitSend');
+            sendBtn.disabled = true;
+            
+            // Simuler la réflexion de Robit
+            setTimeout(() => {
+                const response = generateRobitResponse(message);
+                addRobitMessage(response, 'ai');
+                sendBtn.disabled = false;
+                
+                trackRobitInteraction('response_generated');
+            }, 1500);
+        }
+
+        // Générer réponse intelligente de Robit
+        function generateRobitResponse(userMessage) {
+            const msg = userMessage.toLowerCase();
+            
+            // Détection de mots-clés
+            if (msg.includes('lent') || msg.includes('slow') || msg.includes('rame')) {
+                return robitResponses.slow_computer;
+            }
+            
+            if (msg.includes('virus') || msg.includes('malware') || msg.includes('popup') || msg.includes('sécurité')) {
+                return robitResponses.virus;
+            }
+            
+            if (msg.includes('distance') || msg.includes('écran') || msg.includes('voir') || msg.includes('aipdesk') || msg.includes('remote')) {
+                return robitResponses.remote_help;
+            }
+            
+            if (msg.includes('prix') || msg.includes('coût') || msg.includes('tarif') || msg.includes('combien')) {
+                return robitResponses.pricing_info;
+            }
+            
+            if (msg.includes('windows') || msg.includes('mac') || msg.includes('linux') || msg.includes('compatible') || msg.includes('système')) {
+                return robitResponses.system_requirements;
+            }
+            
+            if (msg.includes('patrick') || msg.includes('rendez-vous') || msg.includes('domicile')) {
+                return "📞 Parfait ! Patrick se déplace à domicile dans votre région.\n\nAppelez-le directement au (819) 380-2999 pour prendre rendez-vous.\n\n💡 Ou utilisez AIPdesk pour une assistance immédiate à distance !";
+            }
+            
+            if (msg.includes('télécharg') || msg.includes('install') || msg.includes('agent')) {
+                return "📥 Pour télécharger l'agent AIPdesk, cliquez sur le bouton 'Télécharger Agent' ci-dessous !\n\nL'agent est compatible avec Windows, macOS et Linux. Une fois installé, Patrick pourra vous assister instantanément.";
+            }
+            
+            // Réponse par défaut avec toutes les options
+            return robitResponses.default;
+        }
+
+        // Ajouter message dans le chat Robit avec défilement automatique
+        function addRobitMessage(message, sender) {
+            const chat = document.getElementById('robitChat');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `robit-message ${sender}`;
+            
+            if (sender === 'ai') {
+                // Animation de frappe pour Robit
+                messageDiv.innerHTML = '<span class="robit-typing">●●●</span>';
+                chat.appendChild(messageDiv);
+                
+                // Forcer le défilement vers le bas
+                chat.scrollTop = chat.scrollHeight;
+                
+                setTimeout(() => {
+                    messageDiv.innerHTML = message.replace(/\n/g, '<br>');
+                    // Défilement après mise à jour du contenu
+                    chat.scrollTop = chat.scrollHeight;
+                }, 800);
+            } else {
+                messageDiv.textContent = message;
+                chat.appendChild(messageDiv);
+                // Défilement immédiat pour les messages utilisateur
+                chat.scrollTop = chat.scrollHeight;
+            }
+        }
+
+        // Header scroll effect
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll reveal animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Gestion des événements clavier pour Robit
+        document.addEventListener('DOMContentLoaded', function() {
+            const input = document.getElementById('robitInput');
+            if (input) {
+                input.addEventListener('keypress', function(e) {
+                    if (e.key === 'Enter') {
+                        sendToRobit();
+                    }
+                });
+            }
+            
+            // Afficher notification après 10 secondes
+            setTimeout(() => {
+                const notif = document.getElementById('robitNotif');
+                if (notif && !robitConfig.isActive) {
+                    notif.style.display = 'flex';
+                    notif.textContent = '!';
+                }
+            }, 10000);
+
+            // Enregistrer conversion au chargement de la page
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17202302756/RLcPCOKhxNoaEKSe2YpA',
+                'event_callback': function() {
+                    console.log('✅ Conversion page visitée enregistrée.');
+                }
+            });
+        });
+
+        // Fermer widget en cliquant à l'extérieur
+        document.addEventListener('click', function(e) {
+            const widget = document.getElementById('robitWidget');
+            const floatBtn = document.getElementById('robitFloatBtn');
+            const button = document.getElementById('robitButton');
+            
+            if (robitConfig.widgetOpen && 
+                !widget.contains(e.target) && 
+                !floatBtn.contains(e.target) && 
+                !button.contains(e.target)) {
+                toggleRobitWidget();
+            }
+        });
+
+        // Messages automatiques basés sur le comportement
+        let userIdleTimer;
+        function resetIdleTimer() {
+            clearTimeout(userIdleTimer);
+            userIdleTimer = setTimeout(() => {
+                if (robitConfig.isActive && robitConfig.widgetOpen) {
+                    addRobitMessage("💡 Astuce : Je peux lancer AIPdesk pour une assistance à distance, ou vous pouvez appeler Patrick directement ! Comment puis-je vous aider ?", 'ai');
+                }
+            }, 30000); // 30 secondes d'inactivité
+        }
+
+        document.addEventListener('mousemove', resetIdleTimer);
+        document.addEventListener('keypress', resetIdleTimer);
+
+        // Tracking des événements de conversion supplémentaires
+        document.addEventListener('DOMContentLoaded', function() {
+            // Tracker les clics sur les services
+            document.querySelectorAll('.service .btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    gtag('event', 'service_click', {
+                        'event_category': 'Services',
+                        'event_label': this.closest('.service').querySelector('h3').textContent,
+                        'value': 1
+                    });
+                });
+            });
+
+            // Tracker le scroll jusqu'aux témoignages
+            const testimonialsSection = document.getElementById('temoignages');
+            if (testimonialsSection) {
+                const testimonialsObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            gtag('event', 'testimonials_viewed', {
+                                'event_category': 'Engagement',
+                                'event_label': 'Testimonials Section',
+                                'value': 1
+                            });
+                            testimonialsObserver.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.5 });
+                
+                testimonialsObserver.observe(testimonialsSection);
+            }
+
+            // Tracker le temps passé sur la page
+            let startTime = Date.now();
+            window.addEventListener('beforeunload', function() {
+                let timeSpent = Math.round((Date.now() - startTime) / 1000);
+                gtag('event', 'time_on_site', {
+                    'event_category': 'Engagement',
+                    'event_label': 'Time Spent',
+                    'value': timeSpent
+                });
+            });
+        });
+
+        // Fonction pour tracker les soumissions de formulaire
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.querySelector('form[name="contact"]');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function() {
+                    gtag('event', 'form_submit', {
+                        'event_category': 'Contact',
+                        'event_label': 'Contact Form',
+                        'value': 1
+                    });
+                    
+                    // Conversion Google Ads pour formulaire
+                    gtag('event', 'conversion', {
+                        'send_to': 'AW-17202302756/RLcPCOKhxNoaEKSe2YpA',
+                        'event_callback': function() {
+                            console.log('✅ Conversion formulaire enregistrée.');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="fr">
+<head>
+    <!-- Google tag (gtag.js) --> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17202302756"></script> 
+    <script> 
+        window.dataLayer = window.dataLayer || []; 
+        function gtag(){dataLayer.push(arguments);} 
+        gtag('js', new Date()); 
+        gtag('config', 'AW-17202302756'); 
+    </script>
+
+    <!-- Event snippet for Inscription conversion page -->
+    <script>
+        gtag('event', 'conversion', {'send_to': 'AW-17202302756/RLcPCOKhxNoaEKSe2YpA'});
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrick Potvin - Atelier Informatique Potvin | Expert depuis 1984</title>
+    <meta name="description" content="Patrick Potvin, expert informatique depuis 1984. Service à domicile patient et professionnel. Réparation, cours, sécurité. Appelez (819) 380-2999">
+    <meta name="keywords" content="réparation ordinateur, service informatique domicile, cours informatique, Patrick Potvin, Atelier Informatique Potvin">
+    <link rel="canonical" href="https://www.atelier-informatique-potvin.ca">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* DESIGN MODE SOMBRE OPTIMISÉ POUR LE CONFORT VISUEL */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #ffffff;
+            font-size: 18px;
+            background: #0d1117;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* HEADER PROFESSIONNEL */
+        header {
+            background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+            color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.4);
+            transition: all 0.3s ease;
+            border-bottom: 1px solid #30363d;
+        }
+
+        header.scrolled {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.6);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.2rem 0;
+            min-height: 80px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .logo:hover {
+            transform: scale(1.05);
+        }
+
+        .logo-icon {
+            width: 70px;
+            height: 55px;
+            background: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover .logo-icon {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-menu a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .nav-menu a:hover {
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        .phone-btn {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+        }
+
+        .phone-btn:hover {
+            background: linear-gradient(135deg, #c0392b, #a93226);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(231, 76, 60, 0.4);
+        }
+
+        .mobile-menu {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 50%, #21262d 100%);
+            color: white;
+            padding: 130px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 20%, rgba(52, 152, 219, 0.1) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(46, 204, 113, 0.1) 0%, transparent 50%);
+            animation: gradientFloat 8s ease-in-out infinite;
+        }
+
+        @keyframes gradientFloat {
+            0%, 100% { transform: translateX(0) translateY(0); }
+            50% { transform: translateX(20px) translateY(-20px); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .hero-text {
+            flex: 1;
+            min-width: 400px;
+            text-align: left;
+        }
+
+        .hero-badge {
+            display: inline-block;
+            background: rgba(247, 147, 30, 0.15);
+            border: 2px solid #f7931e;
+            color: #f7931e;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 5vw, 3.2rem);
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+            line-height: 1.6;
+            color: #e6edf3;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+            background: rgba(33, 38, 45, 0.8);
+            padding: 1.5rem 1rem;
+            border-radius: 15px;
+            border: 1px solid #30363d;
+            min-width: 120px;
+        }
+
+        .stat:hover {
+            background: rgba(40, 46, 53, 0.9);
+            border: 1px solid #3d4349;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 900;
+            color: #f7931e;
+            display: block;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: #c9d1d9;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .hero-photo {
+            flex: 0 0 280px;
+            text-align: center;
+        }
+
+        .photo-frame {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 0 auto 1rem;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.3);
+            border: 6px solid rgba(255,255,255,0.2);
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .photo-caption {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            color: #e6edf3;
+        }
+
+        /* BUTTONS */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #e74c3c, #c0392b);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #c0392b, #a93226);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(231, 76, 60, 0.3);
+        }
+
+        .btn-secondary {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 2px solid rgba(255,255,255,0.3);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+        }
+
+        /* Style pour le bouton Robit */
+        .btn-ai {
+            background: linear-gradient(135deg, #00d4aa, #00a085);
+            color: white;
+            border: 2px solid rgba(0, 212, 170, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-ai:hover {
+            background: linear-gradient(135deg, #00a085, #007a63);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 212, 170, 0.4);
+        }
+
+        .btn-ai::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: left 0.5s;
+        }
+
+        .btn-ai:hover::before {
+            left: 100%;
+        }
+
+        .btn-ai.thinking {
+            animation: aiThinking 1.5s infinite;
+        }
+
+        @keyframes aiThinking {
+            0%, 100% { background: linear-gradient(135deg, #00d4aa, #00a085); }
+            50% { background: linear-gradient(135deg, #00a085, #00d4aa); }
+        }
+
+        /* SECTIONS */
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 3rem;
+            line-height: 1.7;
+            font-weight: 500;
+        }
+
+        /* PROBLEMS SECTION */
+        .problems {
+            background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+            color: white;
+        }
+
+        .problems .section-title {
+            color: #ffffff;
+        }
+
+        .problems .section-subtitle {
+            color: #e6edf3;
+        }
+
+        .problems-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .problem {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #e74c3c;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .problem:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.08);
+        }
+
+        .problem h3 {
+            color: #ff6b6b;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .problem p {
+            color: #e6edf3;
+        }
+
+        .solution-box {
+            background: rgba(52, 152, 219, 0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            text-align: center;
+            border: 3px solid #3498db;
+            box-shadow: 0 10px 40px rgba(52, 152, 219, 0.2);
+        }
+
+        .solution-box h3 {
+            color: #58a6ff;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .solution-box p {
+            color: #e6edf3;
+        }
+
+        /* STORY SECTION */
+        .story {
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
+            color: white;
+        }
+
+        .story .section-title {
+            color: #ffffff;
+        }
+
+        .story .section-subtitle {
+            color: #e6edf3;
+        }
+
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .timeline {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .timeline-item {
+            text-align: center;
+            background: rgba(255,255,255,0.05);
+            padding: 2rem 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            min-width: 150px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .timeline-number {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .timeline-number.start { color: #ff6b6b; }
+        .timeline-number.teach { color: #f7931e; }
+        .timeline-number.now { color: #7ee787; }
+
+        .timeline-label {
+            font-weight: 600;
+            color: #e6edf3;
+        }
+
+        /* SERVICES SECTION */
+        .services {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+        }
+
+        .services .section-title {
+            color: #ffffff;
+        }
+
+        .services .section-subtitle {
+            color: #e6edf3;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .service {
+            background: rgba(255,255,255,0.1);
+            padding: 2.5rem;
+            border-radius: 20px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            transition: all 0.3s ease;
+        }
+
+        .service:hover {
+            background: rgba(255,255,255,0.15);
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            font-size: 2rem;
+            color: white;
+            box-shadow: 0 5px 20px rgba(52, 152, 219, 0.3);
+        }
+
+        .service h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: white;
+        }
+
+        .service p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 1.5rem;
+        }
+
+        .service-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #7ee787;
+            margin-bottom: 1.5rem;
+            background: rgba(46, 160, 67, 0.15);
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #2ea043;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
+            color: white;
+        }
+
+        .testimonials .section-title {
+            color: #ffffff;
+        }
+
+        .testimonials .section-subtitle {
+            color: #e6edf3;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.05);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #f7931e;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            font-size: 3rem;
+            color: #f7931e;
+            font-weight: bold;
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1rem;
+            color: #e6edf3;
+            line-height: 1.7;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #58a6ff;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            text-align: center;
+        }
+
+        .contact .section-title {
+            color: #ffffff;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: rgba(255,255,255,0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #f7931e, #e67e22);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+        }
+
+        .phone-big {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #f7931e;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            display: block;
+            transition: all 0.3s ease;
+        }
+
+        .phone-big:hover {
+            color: #ffb347;
+            transform: scale(1.05);
+        }
+
+        /* WIDGET ASSISTANT ROBIT */
+        .robit-widget {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+            border: 2px solid #00d4aa;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            z-index: 1500;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .robit-widget-header {
+            background: linear-gradient(135deg, #00d4aa, #00a085);
+            color: white;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+        }
+
+        .robit-close {
+            margin-left: auto;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .robit-close:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .robit-widget-body {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        .robit-status {
+            padding: 15px;
+            border-bottom: 1px solid #30363d;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(0, 212, 170, 0.1);
+        }
+
+        .robit-indicator {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #dc3545;
+            animation: blink 1s infinite;
+        }
+
+        .robit-indicator.online {
+            background: #28a745;
+            animation: none;
+        }
+
+        .robit-indicator.offline {
+            background: #ffc107;
+        }
+
+        .robit-chat {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-height: 250px;
+        }
+
+        .robit-chat::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .robit-chat::-webkit-scrollbar-track {
+            background: rgba(255,255,255,0.1);
+            border-radius: 4px;
+        }
+
+        .robit-chat::-webkit-scrollbar-thumb {
+            background: rgba(0, 212, 170, 0.5);
+            border-radius: 4px;
+        }
+
+        .robit-chat::-webkit-scrollbar-thumb:hover {
+            background: rgba(0, 212, 170, 0.8);
+        }
+
+        .robit-message {
+            max-width: 80%;
+            padding: 12px 15px;
+            border-radius: 15px;
+            word-wrap: break-word;
+        }
+
+        .robit-message.user {
+            background: linear-gradient(135deg, #0366d6, #0250a3);
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+
+        .robit-message.ai {
+            background: rgba(0, 212, 170, 0.15);
+            border: 1px solid #00d4aa;
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+        }
+
+        .robit-message.ai .robit-typing {
+            display: inline-block;
+            animation: typing 1.5s infinite;
+        }
+
+        @keyframes typing {
+            0%, 60% { opacity: 1; }
+            61%, 100% { opacity: 0.3; }
+        }
+
+        .robit-input-container {
+            padding: 15px;
+            border-top: 1px solid #30363d;
+            display: flex;
+            gap: 10px;
+        }
+
+        #robitInput {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #30363d;
+            border-radius: 25px;
+            background: #0d1117;
+            color: white;
+            outline: none;
+        }
+
+        #robitInput:focus {
+            border-color: #00d4aa;
+        }
+
+        #robitSend {
+            width: 45px;
+            height: 45px;
+            border: none;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #00d4aa, #00a085);
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+
+        #robitSend:hover {
+            transform: scale(1.1);
+        }
+
+        #robitSend:disabled {
+            background: #6c757d;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .robit-actions {
+            padding: 15px;
+            border-top: 1px solid #30363d;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .robit-action-btn {
+            width: 100%;
+            border: none;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            color: white;
+        }
+
+        .btn-aipdesk {
+            background: linear-gradient(135deg, #9d4edd, #7209b7);
+        }
+
+        .btn-aipdesk:hover {
+            background: linear-gradient(135deg, #7209b7, #560bad);
+            transform: translateY(-2px);
+        }
+
+        .btn-download {
+            background: linear-gradient(135deg, #28a745, #20c997);
+        }
+
+        .btn-download:hover {
+            background: linear-gradient(135deg, #20c997, #17a2b8);
+            transform: translateY(-2px);
+        }
+
+        .btn-pricing {
+            background: linear-gradient(135deg, #ffc107, #fd7e14);
+        }
+
+        .btn-pricing:hover {
+            background: linear-gradient(135deg, #fd7e14, #e83e8c);
+            transform: translateY(-2px);
+        }
+
+        /* Bouton flottant */
+        .robit-float-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #00d4aa, #00a085);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: 0 5px 20px rgba(0, 212, 170, 0.4);
+            z-index: 1400;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 24px;
+        }
+
+        .robit-float-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 30px rgba(0, 212, 170, 0.6);
+        }
+
+        .robit-notification {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #dc3545

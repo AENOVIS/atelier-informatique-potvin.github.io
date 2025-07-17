@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://atelier-informatique-potvin.ca/sitemap.xml
