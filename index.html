@@ -6,55 +6,10 @@
     <title>Patrick Potvin - Atelier Informatique Potvin | Expert depuis 1984</title>
     <meta name="description" content="Patrick Potvin, expert informatique depuis 1984. Service à domicile patient et professionnel. Réparation, cours, sécurité. Appelez (819) 380-2999">
     <meta name="keywords" content="réparation ordinateur, service informatique domicile, cours informatique, Patrick Potvin, Atelier Informatique Potvin">
-    <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.atelier-informatique-potvin.ca">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="Patrick Potvin - Expert informatique depuis 1984">
-    <meta property="og:description" content="Service informatique à domicile patient et professionnel. Réparation, cours, sécurité.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.atelier-informatique-potvin.ca">
-    <meta property="og:locale" content="fr_CA">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Patrick Potvin - Expert informatique depuis 1984">
-    <meta name="twitter:description" content="Service informatique à domicile patient et professionnel.">
-    
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    
-    <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-    
-    <!-- Schema.org -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Atelier Informatique Potvin",
-      "description": "Service informatique à domicile, réparation ordinateurs, cours personnalisés",
-      "founder": {
-        "@type": "Person",
-        "name": "Patrick Potvin"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "addressRegion": "QC",
-        "addressCountry": "CA"
-      },
-      "telephone": "+1-819-380-2999",
-      "email": "patrick@atelier-informatique-potvin.ca",
-      "url": "https://www.atelier-informatique-potvin.ca",
-      "serviceArea": {
-        "@type": "State",
-        "name": "Quebec"
-      }
-    }
-    </script>
     
     <style>
         /* DESIGN MODE SOMBRE OPTIMISÉ POUR LE CONFORT VISUEL */
@@ -106,7 +61,6 @@
             align-items: center;
             padding: 1.2rem 0;
             min-height: 80px;
-            position: relative;
         }
 
         .logo {
@@ -135,12 +89,17 @@
             padding: 8px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.2);
             transition: all 0.3s ease;
-            font-size: 2rem;
         }
 
         .logo:hover .logo-icon {
             transform: scale(1.05);
             box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .nav-menu {
@@ -191,7 +150,224 @@
             color: white;
             font-size: 1.5rem;
             cursor: pointer;
-            padding: 0.5rem;
+        }
+
+        /* ROBIT ASSISTANT */
+        .robit-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1001;
+        }
+
+        .robit-button {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            border-radius: 50%;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .robit-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+        }
+
+        @keyframes pulse {
+            0% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3); }
+            50% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.6); }
+            100% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3); }
+        }
+
+        .robit-chat {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 350px;
+            height: 450px;
+            background: #21262d;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            display: none;
+            flex-direction: column;
+            border: 1px solid #30363d;
+            z-index: 1002;
+        }
+
+        .robit-chat.active {
+            display: flex;
+        }
+
+        .robit-header {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            padding: 15px;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .robit-title {
+            font-weight: 700;
+            color: white;
+            font-size: 1.1rem;
+        }
+
+        .robit-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .robit-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background: #161b22;
+        }
+
+        .robit-message {
+            margin-bottom: 15px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .robit-message.user {
+            background: #667eea;
+            color: white;
+            margin-left: auto;
+        }
+
+        .robit-message.bot {
+            background: #30363d;
+            color: #e6edf3;
+        }
+
+        .robit-input-container {
+            padding: 15px;
+            border-top: 1px solid #30363d;
+            display: flex;
+            gap: 10px;
+        }
+
+        .robit-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #30363d;
+            border-radius: 20px;
+            background: #0d1117;
+            color: white;
+            font-size: 14px;
+        }
+
+        .robit-send {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        /* EASTER EGG DASHBOARD */
+        .dashboard {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
+            display: none;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dashboard.active {
+            display: flex;
+        }
+
+        .dashboard-content {
+            background: #161b22;
+            border-radius: 20px;
+            padding: 30px;
+            max-width: 800px;
+            width: 90%;
+            max-height: 80%;
+            overflow-y: auto;
+            border: 2px solid #30363d;
+            position: relative;
+        }
+
+        .dashboard-header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #30363d;
+        }
+
+        .dashboard-title {
+            font-size: 2.5rem;
+            color: #58a6ff;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(88, 166, 255, 0.5);
+        }
+
+        .dashboard-subtitle {
+            color: #7ee787;
+            font-size: 1.2rem;
+        }
+
+        .dashboard-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            background: #e74c3c;
+            border: none;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .dashboard-card {
+            background: #21262d;
+            border-radius: 15px;
+            padding: 20px;
+            border: 1px solid #30363d;
+            text-align: center;
+        }
+
+        .dashboard-card h3 {
+            color: #58a6ff;
+            margin-bottom: 15px;
+            font-size: 1.3rem;
+        }
+
+        .dashboard-stat {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #7ee787;
+            margin-bottom: 10px;
         }
 
         /* HERO SECTION */
@@ -317,10 +493,12 @@
             margin: 0 auto 1rem;
             box-shadow: 0 10px 40px rgba(0,0,0,0.3);
             border: 6px solid rgba(255,255,255,0.2);
-            background: linear-gradient(135deg, #3498db, #2980b9);
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        }
+
+        .photo-frame img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
         .photo-caption {
@@ -389,10 +567,18 @@
             font-weight: 500;
         }
 
-        /* PROBLEMS SECTION */
+        /* PROBLEMS SECTION - FOND SOMBRE COHÉRENT */
         .problems {
             background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
             color: white;
+        }
+
+        .problems .section-title {
+            color: #ffffff;
+        }
+
+        .problems .section-subtitle {
+            color: #e6edf3;
         }
 
         .problems-grid {
@@ -446,10 +632,18 @@
             color: #e6edf3;
         }
 
-        /* STORY SECTION */
+        /* STORY SECTION - FOND SOMBRE COHÉRENT */
         .story {
             background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
             color: white;
+        }
+
+        .story .section-title {
+            color: #ffffff;
+        }
+
+        .story .section-subtitle {
+            color: #e6edf3;
         }
 
         .story-content {
@@ -496,6 +690,14 @@
         .services {
             background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
+        }
+
+        .services .section-title {
+            color: #ffffff;
+        }
+
+        .services .section-subtitle {
+            color: #e6edf3;
         }
 
         .services-grid {
@@ -555,10 +757,18 @@
             border: 1px solid #2ea043;
         }
 
-        /* TESTIMONIALS */
+        /* TESTIMONIALS - FOND SOMBRE COHÉRENT */
         .testimonials {
             background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             color: white;
+        }
+
+        .testimonials .section-title {
+            color: #ffffff;
+        }
+
+        .testimonials .section-subtitle {
+            color: #e6edf3;
         }
 
         .testimonials-grid {
@@ -604,6 +814,10 @@
             background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
             color: white;
             text-align: center;
+        }
+
+        .contact .section-title {
+            color: #ffffff;
         }
 
         .contact-info {
@@ -652,37 +866,6 @@
             transform: scale(1.05);
         }
 
-        /* ASSISTANCE SECTION */
-        .assistance {
-            background: #161b22;
-            color: white;
-        }
-
-        .assistance-buttons {
-            display: flex;
-            gap: 2rem;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 2rem;
-        }
-
-        .btn-download {
-            background: linear-gradient(135deg, #28a745, #20c997);
-            color: white;
-            padding: 15px 30px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: 700;
-            font-size: 1.1rem;
-            transition: all 0.3s ease;
-            box-shadow: 0 5px 15px rgba(40, 167, 69, 0.3);
-        }
-
-        .btn-download:hover {
-            background: linear-gradient(135deg, #20c997, #28a745);
-            transform: translateY(-3px);
-        }
-
         /* FOOTER */
         .footer {
             background: #0d1117;
@@ -700,25 +883,6 @@
 
             .nav-menu {
                 display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: #161b22;
-                padding: 1rem;
-                border-top: 1px solid #30363d;
-                flex-direction: column;
-                gap: 0.5rem;
-                z-index: 9999;
-            }
-
-            .nav-menu.active {
-                display: flex;
-            }
-
-            .nav-menu a {
-                padding: 1rem;
-                border-radius: 8px;
             }
 
             .logo {
@@ -728,7 +892,6 @@
             .logo-icon {
                 width: 60px;
                 height: 45px;
-                font-size: 1.5rem;
             }
 
             nav {
@@ -780,9 +943,19 @@
                 font-size: 1rem;
             }
 
-            .assistance-buttons {
-                flex-direction: column;
-                align-items: center;
+            .robit-chat {
+                width: 320px;
+                height: 400px;
+                right: 10px;
+            }
+
+            .dashboard-content {
+                width: 95%;
+                padding: 20px;
+            }
+
+            .dashboard-grid {
+                grid-template-columns: 1fr;
             }
         }
 
@@ -800,6 +973,12 @@
                 flex-direction: column;
                 align-items: center;
             }
+
+            .robit-chat {
+                width: 280px;
+                height: 350px;
+                bottom: 80px;
+            }
         }
 
         /* ANIMATIONS */
@@ -813,21 +992,44 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .typing-indicator {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #667eea;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-indicator:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-10px); }
+        }
     </style>
 </head>
 <body>
     <header id="header">
         <div class="container">
-            <nav role="navigation" aria-label="Navigation principale">
+            <nav>
                 <a href="#" class="logo">
                     <div class="logo-icon">
-                        <img src="logo-aip.png" alt="AIP Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                        <img src="logo-aip.png" alt="AIP Logo">
                     </div>
                     <span>Atelier Informatique Potvin</span>
                 </a>
                 
-                <ul class="nav-menu" id="nav-menu">
+                <ul class="nav-menu">
                     <li><a href="#services">Services</a></li>
+                    <li><a href="#soutien">Soutien</a></li>
                     <li><a href="#temoignages">Témoignages</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -836,12 +1038,95 @@
                     <i class="fas fa-phone"></i> (819) 380-2999
                 </a>
                 
-                <button class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+                <button class="mobile-menu">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
         </div>
     </header>
+
+    <!-- ROBIT ASSISTANT -->
+    <div class="robit-container">
+        <button class="robit-button" onclick="toggleRobit()">
+            <i class="fas fa-robot"></i>
+        </button>
+        
+        <div class="robit-chat" id="robitChat">
+            <div class="robit-header">
+                <div class="robit-title">
+                    <i class="fas fa-robot"></i> ROBIT Assistant
+                </div>
+                <button class="robit-close" onclick="toggleRobit()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="robit-messages" id="robitMessages">
+                <div class="robit-message bot">
+                    👋 Salut ! Je suis ROBIT, l'assistant virtuel de Patrick. Comment puis-je vous aider aujourd'hui ?
+                </div>
+            </div>
+            
+            <div class="robit-input-container">
+                <input type="text" class="robit-input" id="robitInput" placeholder="Tapez votre message..." onkeypress="handleRobitEnter(event)">
+                <button class="robit-send" onclick="sendRobitMessage()">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- EASTER EGG DASHBOARD -->
+    <div class="dashboard" id="dashboard">
+        <div class="dashboard-content">
+            <button class="dashboard-close" onclick="closeDashboard()">
+                <i class="fas fa-times"></i>
+            </button>
+            
+            <div class="dashboard-header">
+                <h2 class="dashboard-title">🔧 DASHBOARD PATRICK</h2>
+                <p class="dashboard-subtitle">Panneau de contrôle avancé - Accès Easter Egg</p>
+            </div>
+            
+            <div class="dashboard-grid">
+                <div class="dashboard-card">
+                    <h3>📊 Statistiques du site</h3>
+                    <div class="dashboard-stat">2,847</div>
+                    <p>Visiteurs aujourd'hui</p>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>📞 Appels reçus</h3>
+                    <div class="dashboard-stat">23</div>
+                    <p>Nouveaux clients cette semaine</p>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>🤖 ROBIT Stats</h3>
+                    <div class="dashboard-stat">156</div>
+                    <p>Conversations aujourd'hui</p>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>⚡ Système</h3>
+                    <div class="dashboard-stat">98%</div>
+                    <p>Uptime serveur</p>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>🎯 Conversions</h3>
+                    <div class="dashboard-stat">7.2%</div>
+                    <p>Taux de conversion</p>
+                </div>
+                
+                <div class="dashboard-card">
+                    <h3>🔑 Easter Egg</h3>
+                    <div class="dashboard-stat">🎉</div>
+                    <p>Félicitations ! Vous avez trouvé le secret de Patrick !</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <main>
         <!-- HERO SECTION -->
@@ -880,7 +1165,7 @@
                             <a href="#services" class="btn btn-secondary">
                                 <i class="fas fa-info-circle"></i> Mes services
                             </a>
-                            <a href="#paiement" class="btn btn-secondary">
+                            <a href="https://quickbooks.intuit.com/payments/[TON-LIEN]" class="btn btn-secondary">
                                 💳 Payer en ligne
                             </a>
                         </div>
@@ -888,7 +1173,7 @@
                     
                     <div class="hero-photo">
                         <div class="photo-frame">
-                            <img src="patrick-photo.jpg" alt="Patrick Potvin" style="width: 100%; height: 100%; object-fit: cover;">
+                            <img src="patrick-photo.jpg" alt="Patrick Potvin">
                         </div>
                         <p class="photo-caption">
                             <i class="fas fa-user-tie"></i> Patrick Potvin<br>
@@ -1014,6 +1299,41 @@
             </div>
         </section>
 
+        <!-- SECTION SOUTIEN -->
+        <section id="soutien" class="section" style="background: linear-gradient(135deg, #161b22 0%, #21262d 100%); color: white;">
+            <div class="container">
+                <h2 class="section-title">Assistance à distance</h2>
+                <p class="section-subtitle">Téléchargez l'outil sécurisé pour permettre à Patrick de vous aider immédiatement, à distance.</p>
+                
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                    <a id="btn-windows" href="Assistance-AIP.exe" class="btn btn-primary" download style="display: none;">
+                        🪟 Télécharger pour Windows
+                    </a>
+                    <a id="btn-mac" href="Assistance-AIP-mac.zip" class="btn btn-secondary" download style="display: none;">
+                        🍎 Télécharger pour macOS
+                    </a>
+                </div>
+                
+                <div style="margin-top: 3rem; text-align: center;">
+                    <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); max-width: 600px; margin: 0 auto;">
+                        <h3 style="color: #58a6ff; margin-bottom: 1rem;">
+                            <i class="fas fa-info-circle"></i> Comment ça marche ?
+                        </h3>
+                        <p style="color: #e6edf3; line-height: 1.6;">
+                            1. Téléchargez l'outil selon votre système<br>
+                            2. Ouvrez le fichier téléchargé<br>
+                            3. Appelez Patrick au (819) 380-2999<br>
+                            4. Patrick pourra voir votre écran et vous aider directement
+                        </p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 2rem; color: #bbb; font-size: 0.95rem; text-align: center;">
+                    <i class="fas fa-shield-alt"></i> Connexion sécurisée et chiffrée • Aucun mot de passe requis • Connexion directe à Patrick
+                </p>
+            </div>
+        </section>
+
         <!-- TESTIMONIALS SECTION -->
         <section id="temoignages" class="section testimonials">
             <div class="container">
@@ -1037,100 +1357,6 @@
             </div>
         </section>
 
-        <!-- ASSISTANCE SECTION -->
-        <section class="section assistance">
-            <div class="container">
-                <h2 class="section-title">Assistance à distance</h2>
-                <p class="section-subtitle">Téléchargez l'outil sécurisé MeshCentral pour permettre à Patrick de vous aider immédiatement, à distance.</p>
-                
-                <div class="assistance-buttons fade-in">
-                    <a href="https://github.com/AENOVIS/atelier-informatique-potvin.github.io/blob/main/Assistance-AIP.exe?raw=true" class="btn-download" download="Assistance-AIP.exe">
-                        🪟 Télécharger pour Windows
-                    </a>
-                    <a href="https://github.com/AENOVIS/atelier-informatique-potvin.github.io/raw/main/Assistance-AIP-mac.zip" class="btn-download" download="Assistance-AIP-mac.zip">
-                        🍎 Télécharger pour macOS
-                    </a>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; margin-top: 2rem; border-left: 5px solid #f7931e;">
-                    <p style="color: #f7931e; font-weight: 600; margin-bottom: 1rem;">
-                        <i class="fas fa-info-circle"></i> Instructions importantes :
-                    </p>
-                    <ol style="color: #e6edf3; line-height: 1.6; padding-left: 1.5rem;">
-                        <li><strong>Appelez Patrick AVANT</strong> au (819) 380-2999</li>
-                        <li>Téléchargez l'outil selon votre système (liens ci-dessus)</li>
-                        <li>Exécutez le fichier (Patrick vous guide)</li>
-                        <li>Donnez le code à Patrick pour la connexion sécurisée</li>
-                    </ol>
-                    
-                    <div style="background: rgba(0,0,0,0.3); padding: 1rem; border-radius: 8px; margin-top: 1.5rem;">
-                        <p style="color: #58a6ff; font-weight: 600; margin-bottom: 0.5rem;">
-                            <i class="fas fa-download"></i> Méthode alternative pour Windows :
-                        </p>
-                        <ol style="font-size: 0.9rem; line-height: 1.5; color: #e6edf3; padding-left: 1.5rem;">
-                            <li>Cliquez sur : <a href="https://github.com/AENOVIS/atelier-informatique-potvin.github.io/blob/main/Assistance-AIP.exe" target="_blank" style="color: #79c0ff;">Page GitHub du fichier Windows</a></li>
-                            <li>Sur la page GitHub, cliquez sur le bouton <strong>"Download"</strong></li>
-                            <li>Le fichier .exe se téléchargera directement</li>
-                        </ol>
-                        <p style="font-size: 0.85rem; margin-top: 1rem; opacity: 0.7;">
-                            💡 Cette méthode garantit le téléchargement du vrai fichier exécutable
-                        </p>
-                    </div>
-                    
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                        🔒 Connexion 100% sécurisée • Aucun mot de passe requis • MeshCentral
-                    </p>
-                </div>
-                
-                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; margin-top: 2rem; border-left: 5px solid #f7931e;">
-                    <p style="color: #f7931e; font-weight: 600; margin-bottom: 1rem;">
-                        <i class="fas fa-info-circle"></i> Instructions importantes :
-                    </p>
-                    <ol style="color: #e6edf3; line-height: 1.6; padding-left: 1.5rem;">
-                        <li><strong>Appelez Patrick AVANT</strong> au (819) 380-2999</li>
-                        <li>Téléchargez l'outil selon votre système</li>
-                        <li>Exécutez le fichier (Patrick vous guide)</li>
-                        <li>Donnez le code à Patrick pour la connexion sécurisée</li>
-                    </ol>
-                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                        🔒 Connexion 100% sécurisée • Aucun mot de passe requis • MeshCentral
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- PAYMENT SECTION -->
-        <section id="paiement" class="section" style="background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%); color: white;">
-            <div class="container">
-                <h2 class="section-title">Paiement en ligne sécurisé</h2>
-                <p class="section-subtitle">Payez votre facture facilement et en toute sécurité</p>
-                
-                <div style="text-align: center; margin-top: 2rem;">
-                    <p style="font-size: 1.2rem; margin-bottom: 2rem;">
-                        <strong>Numéro de facture requis</strong><br>
-                        Vous le trouverez sur votre facture papier ou email
-                    </p>
-                    
-                    <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; max-width: 500px; margin: 0 auto;">
-                        <h3 style="margin-bottom: 1rem;">Méthodes de paiement acceptées :</h3>
-                        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2rem;">
-                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px;">💳 Visa</span>
-                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px;">💳 Mastercard</span>
-                            <span style="background: rgba(255,255,255,0.2); padding: 0.5rem 1rem; border-radius: 8px;">🏦 Virement</span>
-                        </div>
-                        
-                        <a href="tel:8193802999" class="btn btn-secondary" style="background: white; color: #27ae60; border: none;">
-                            <i class="fas fa-phone"></i> Appelez pour payer maintenant
-                        </a>
-                        
-                        <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
-                            Patrick vous donnera le lien de paiement sécurisé par téléphone
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <!-- CONTACT SECTION -->
         <section id="contact" class="section contact">
             <div class="container">
@@ -1148,7 +1374,7 @@
                         </div>
                         <div>
                             <strong>Email</strong><br>
-                            <a href="mailto:patrick@atelier-informatique-potvin.ca" style="color: #58a6ff;">patrick@atelier-informatique-potvin.ca</a>
+                            patrick@atelier-informatique-potvin.ca
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1175,14 +1401,17 @@
                     </div>
                 </div>
 
-                <div style="margin-top: 3rem;">
-                    <a href="tel:8193802999" class="btn btn-primary" style="font-size: 1.3rem; margin-right: 1rem;">
-                        <i class="fas fa-phone"></i> Appelez Patrick maintenant
-                    </a>
-                </div>
-                
-                <p style="margin-top: 2rem; font-size: 1rem; opacity: 0.9; color: #e6edf3;">
-                    <i class="fas fa-info-circle"></i> Dimanche : Urgences seulement • NEQ: 2281042178
+                <a href="tel:8193802999" class="btn btn-primary" style="font-size: 1.3rem; margin-top: 2rem; margin-right: 1rem;">
+                    <i class="fas fa-phone"></i> Appelez Patrick maintenant
+                </a>
+                <a href="https://quickbooks.intuit.com/payments/[TON-LIEN]" class="btn btn-secondary" style="font-size: 1.1rem; margin-top: 2rem;">
+                    💳 Payer une facture
+                </a>
+                <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9; color: #e6edf3;">
+                    <i class="fas fa-info-circle"></i> Dimanche : Urgences seulement
+                </p>
+                <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7; color: #c9d1d9;">
+                    <i class="fas fa-eye"></i> Site optimisé en mode sombre pour le confort visuel
                 </p>
             </div>
         </section>
@@ -1191,9 +1420,6 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Atelier Informatique Potvin (AIP) - Patrick Potvin, à votre service depuis 1984 ❤️</p>
-            <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-                NEQ: 2281042178 • <a href="tel:8193802999" style="color: #58a6ff;">(819) 380-2999</a>
-            </p>
         </div>
     </footer>
 
@@ -1205,34 +1431,6 @@
                 header.classList.add('scrolled');
             } else {
                 header.classList.remove('scrolled');
-            }
-        });
-
-        // Mobile menu functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuBtn = document.getElementById('mobile-menu');
-            const navMenu = document.getElementById('nav-menu');
-            
-            if (mobileMenuBtn && navMenu) {
-                mobileMenuBtn.addEventListener('click', function() {
-                    navMenu.classList.toggle('active');
-                    
-                    // Change hamburger icon
-                    const icon = mobileMenuBtn.querySelector('i');
-                    if (navMenu.classList.contains('active')) {
-                        icon.className = 'fas fa-times';
-                    } else {
-                        icon.className = 'fas fa-bars';
-                    }
-                });
-                
-                // Close menu when clicking on a link
-                navMenu.querySelectorAll('a').forEach(link => {
-                    link.addEventListener('click', function() {
-                        navMenu.classList.remove('active');
-                        mobileMenuBtn.querySelector('i').className = 'fas fa-bars';
-                    });
-                });
             }
         });
 
@@ -1268,14 +1466,192 @@
             observer.observe(el);
         });
 
-        // Email protection - SUPPRIMÉ car email maintenant affiché directement
+        // === ROBIT ASSISTANT ===
+        let robitResponses = [
+            "Bonjour ! Patrick est disponible pour vous aider avec vos problèmes informatiques. Voulez-vous prendre rendez-vous ?",
+            "Je peux vous aider à comprendre nos services. Quel type de problème informatique avez-vous ?",
+            "Patrick se spécialise dans la réparation d'ordinateurs, les cours personnalisés et la protection antivirus. Que puis-je vous expliquer ?",
+            "Excellente question ! Patrick offre un service à domicile dans votre région. Voulez-vous son numéro ?",
+            "Patrick a 41 ans d'expérience et il est très patient. Il explique tout en français simple !",
+            "Pour une urgence, vous pouvez appeler Patrick au (819) 380-2999. Il est disponible 7 jours sur 7.",
+            "Patrick peut vous aider avec ça ! Il se déplace à domicile avec tous ses outils. Très pratique !",
+            "C'est exactement le genre de problème que Patrick adore résoudre. Il va vous expliquer tout étape par étape.",
+            "Patrick offre aussi des cours personnalisés. Parfait pour apprendre à votre rythme !",
+            "Vous pouvez télécharger l'outil d'assistance à distance dans la section 'Soutien' pour que Patrick vous aide immédiatement."
+        ];
 
-        // Download functions - SUPPRIMÉES car liens directs maintenant utilisés
+        function toggleRobit() {
+            const chat = document.getElementById('robitChat');
+            chat.classList.toggle('active');
+            
+            if (chat.classList.contains('active')) {
+                document.getElementById('robitInput').focus();
+            }
+        }
 
-        // Initialize animations and other features
-        document.addEventListener('DOMContentLoaded', function() {
-            // Additional initialization can go here
-            console.log('Site Atelier Informatique Potvin chargé avec succès!');
+        function sendRobitMessage() {
+            const input = document.getElementById('robitInput');
+            const message = input.value.trim();
+            
+            if (message) {
+                addRobitMessage(message, 'user');
+                input.value = '';
+                
+                // Simulate typing
+                setTimeout(() => {
+                    addTypingIndicator();
+                }, 500);
+                
+                // Send bot response
+                setTimeout(() => {
+                    removeTypingIndicator();
+                    const response = robitResponses[Math.floor(Math.random() * robitResponses.length)];
+                    addRobitMessage(response, 'bot');
+                }, 1500);
+            }
+        }
+
+        function addRobitMessage(text, sender) {
+            const messages = document.getElementById('robitMessages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `robit-message ${sender}`;
+            messageDiv.textContent = text;
+            messages.appendChild(messageDiv);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function addTypingIndicator() {
+            const messages = document.getElementById('robitMessages');
+            const typingDiv = document.createElement('div');
+            typingDiv.className = 'robit-message bot typing';
+            typingDiv.id = 'typing-indicator';
+            typingDiv.innerHTML = `
+                <span class="typing-indicator"></span>
+                <span class="typing-indicator"></span>
+                <span class="typing-indicator"></span>
+            `;
+            messages.appendChild(typingDiv);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function removeTypingIndicator() {
+            const typing = document.getElementById('typing-indicator');
+            if (typing) {
+                typing.remove();
+            }
+        }
+
+        function handleRobitEnter(event) {
+            if (event.key === 'Enter') {
+                sendRobitMessage();
+            }
+        }
+
+        // === EASTER EGG DASHBOARD ===
+        let easterEggSequence = [];
+        let requiredSequence = ['Shift', 'KeyA', 'KeyW', 'KeyD', 'Space'];
+        let clickCount = 0;
+        let clickTarget = 5;
+        let sequenceTimeout;
+
+        function resetEasterEgg() {
+            easterEggSequence = [];
+            clickCount = 0;
+            clearTimeout(sequenceTimeout);
+        }
+
+        function checkEasterEggSequence() {
+            if (easterEggSequence.length === requiredSequence.length) {
+                let matches = true;
+                for (let i = 0; i < requiredSequence.length; i++) {
+                    if (easterEggSequence[i] !== requiredSequence[i]) {
+                        matches = false;
+                        break;
+                    }
+                }
+                
+                if (matches) {
+                    // Sequence correct, now wait for 5 clicks
+                    document.addEventListener('click', handleEasterEggClick);
+                    // Reset after 5 seconds if no clicks
+                    sequenceTimeout = setTimeout(resetEasterEgg, 5000);
+                } else {
+                    resetEasterEgg();
+                }
+            }
+        }
+
+        function handleEasterEggClick() {
+            clickCount++;
+            
+            if (clickCount >= clickTarget) {
+                // Easter egg activated!
+                document.getElementById('dashboard').classList.add('active');
+                document.removeEventListener('click', handleEasterEggClick);
+                resetEasterEgg();
+            }
+        }
+
+        function closeDashboard() {
+            document.getElementById('dashboard').classList.remove('active');
+        }
+
+        // Listen for easter egg key sequence
+        document.addEventListener('keydown', function(event) {
+            // Handle Shift key
+            if (event.key === 'Shift') {
+                easterEggSequence.push('Shift');
+            }
+            // Handle other keys
+            else if (event.code === 'KeyA' || event.code === 'KeyW' || event.code === 'KeyD' || event.code === 'Space') {
+                easterEggSequence.push(event.code);
+            }
+            // Wrong key, reset
+            else {
+                resetEasterEgg();
+                return;
+            }
+            
+            // Check if sequence is getting too long
+            if (easterEggSequence.length > requiredSequence.length) {
+                resetEasterEgg();
+                return;
+            }
+            
+            checkEasterEggSequence();
+            
+            // Reset after 3 seconds of inactivity
+            clearTimeout(sequenceTimeout);
+            sequenceTimeout = setTimeout(resetEasterEgg, 3000);
+        });
+
+        // === DÉTECTION OS POUR BOUTONS D'ASSISTANCE ===
+        document.addEventListener('DOMContentLoaded', function () {
+            const os = navigator.userAgent;
+            const winBtn = document.getElementById('btn-windows');
+            const macBtn = document.getElementById('btn-mac');
+
+            if (os.includes('Windows')) {
+                winBtn.style.display = 'inline-flex';
+                macBtn.style.display = 'none';
+            } else if (os.includes('Mac')) {
+                macBtn.style.display = 'inline-flex';
+                winBtn.style.display = 'none';
+            } else {
+                winBtn.style.display = 'inline-flex';
+                macBtn.style.display = 'inline-flex';
+            }
+        });
+
+        // Close dashboard when clicking outside
+        document.addEventListener('click', function(event) {
+            const dashboard = document.getElementById('dashboard');
+            const dashboardContent = document.querySelector('.dashboard-content');
+            
+            if (dashboard.classList.contains('active') && 
+                !dashboardContent.contains(event.target)) {
+                closeDashboard();
+            }
         });
     </script>
 </body>
