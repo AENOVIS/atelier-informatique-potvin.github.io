@@ -22,8 +22,10 @@
     <meta name="twitter:description" content="Service informatique à domicile patient et professionnel.">
     
     <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="32x32" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23007acc'/><text y='.9em' font-size='90'>💻</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23007acc'/><text y='.9em' font-size='90'>💻</text></svg>">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -319,7 +321,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 8rem;
         }
 
         .photo-caption {
@@ -793,7 +794,6 @@
             .photo-frame {
                 width: 200px;
                 height: 200px;
-                font-size: 6rem;
             }
 
             .timeline {
@@ -821,7 +821,7 @@
             <nav role="navigation" aria-label="Navigation principale">
                 <a href="#" class="logo">
                     <div class="logo-icon">
-                        💻
+                        <img src="logo-aip.png" alt="AIP Logo" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
                     <span>Atelier Informatique Potvin</span>
                 </a>
@@ -888,7 +888,7 @@
                     
                     <div class="hero-photo">
                         <div class="photo-frame">
-                            👨‍💻
+                            <img src="patrick-photo.jpg" alt="Patrick Potvin" style="width: 100%; height: 100%; object-fit: cover;">
                         </div>
                         <p class="photo-caption">
                             <i class="fas fa-user-tie"></i> Patrick Potvin<br>
@@ -1041,20 +1041,31 @@
         <section class="section assistance">
             <div class="container">
                 <h2 class="section-title">Assistance à distance</h2>
-                <p class="section-subtitle">Téléchargez l'outil sécurisé pour permettre à Patrick de vous aider immédiatement, à distance.</p>
+                <p class="section-subtitle">Téléchargez l'outil sécurisé MeshCentral pour permettre à Patrick de vous aider immédiatement, à distance.</p>
                 
                 <div class="assistance-buttons fade-in">
-                    <a href="tel:8193802999" class="btn-download" onclick="downloadForWindows()">
+                    <a href="https://github.com/AENOVS/atelier-informatique-potvin.github.io/raw/main/Assistance-AIP.exe" class="btn-download" download>
                         🪟 Télécharger pour Windows
                     </a>
-                    <a href="tel:8193802999" class="btn-download" onclick="downloadForMac()">
+                    <a href="https://github.com/AENOVS/atelier-informatique-potvin.github.io/raw/main/Assistance-AIP-mac.zip" class="btn-download" download>
                         🍎 Télécharger pour macOS
                     </a>
                 </div>
                 
-                <p style="margin-top: 2rem; color: #bbb; font-size: 0.95rem;">
-                    <strong>Important :</strong> Appelez Patrick au (819) 380-2999 avant de télécharger. Il vous guidera étape par étape.
-                </p>
+                <div style="background: rgba(255,255,255,0.1); padding: 2rem; border-radius: 15px; margin-top: 2rem; border-left: 5px solid #f7931e;">
+                    <p style="color: #f7931e; font-weight: 600; margin-bottom: 1rem;">
+                        <i class="fas fa-info-circle"></i> Instructions importantes :
+                    </p>
+                    <ol style="color: #e6edf3; line-height: 1.6; padding-left: 1.5rem;">
+                        <li><strong>Appelez Patrick AVANT</strong> au (819) 380-2999</li>
+                        <li>Téléchargez l'outil selon votre système</li>
+                        <li>Exécutez le fichier (Patrick vous guide)</li>
+                        <li>Donnez le code à Patrick pour la connexion sécurisée</li>
+                    </ol>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.8;">
+                        🔒 Connexion 100% sécurisée • Aucun mot de passe requis • MeshCentral
+                    </p>
+                </div>
             </div>
         </section>
 
@@ -1107,7 +1118,7 @@
                         </div>
                         <div>
                             <strong>Email</strong><br>
-                            <span id="email-protection">Cliquez pour révéler</span>
+                            <a href="mailto:patrick@atelier-informatique-potvin.ca" style="color: #58a6ff;">patrick@atelier-informatique-potvin.ca</a>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -1227,20 +1238,9 @@
             observer.observe(el);
         });
 
-        // Email protection
-        document.getElementById('email-protection').addEventListener('click', function() {
-            const email = 'patrick' + '@' + 'atelier-informatique-potvin.ca';
-            this.innerHTML = '<a href="mailto:' + email + '" style="color: #58a6ff;">' + email + '</a>';
-        });
+        // Email protection - SUPPRIMÉ car email maintenant affiché directement
 
-        // Download functions (placeholder - call Patrick instead)
-        function downloadForWindows() {
-            alert('Appelez Patrick au (819) 380-2999 pour obtenir le logiciel d\'assistance Windows. Il vous guidera dans l\'installation.');
-        }
-
-        function downloadForMac() {
-            alert('Appelez Patrick au (819) 380-2999 pour obtenir le logiciel d\'assistance macOS. Il vous guidera dans l\'installation.');
-        }
+        // Download functions - SUPPRIMÉES car liens directs maintenant utilisés
 
         // Initialize animations and other features
         document.addEventListener('DOMContentLoaded', function() {
