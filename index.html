@@ -4,22 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Patrick Potvin - Atelier Informatique Potvin | Votre expert informatique de confiance depuis 1984</title>
-    <meta name="description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, cours personnalisés, sécurité anti-virus et assistance patiente. Appelez (819) 380-2999 pour tous vos tracas informatiques.">
-    <meta name="keywords" content="réparation ordinateur, service informatique domicile, cours informatique, Patrick Potvin, Atelier Informatique Potvin, dépannage informatique, Nicolet, Centre-du-Québec, virus, ordinateur lent, support informatique, assistance à distance, technologie seniors">
+    <meta name="description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, création de sites web, cours personnalisés, sécurité anti-virus et assistance patiente. Discutez avec Robit, notre assistant IA flottant. Appelez (819) 380-2999.">
+    <meta name="keywords" content="réparation ordinateur, service informatique domicile, cours informatique, Patrick Potvin, Atelier Informatique Potvin, dépannage informatique, Nicolet, Centre-du-Québec, virus, ordinateur lent, support informatique, assistance à distance, technologie seniors, Robit, facturation QuickBooks, dashboard secret, assistant IA, chatbot, live chat, création site web">
     <link rel="canonical" href="https://www.atelier-informatique-potvin.ca">
+    
+    <!-- FAVICONS ET ICÔNES DE LIEN WEB -->
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.atelier-informatique-potvin.ca/">
     <meta property="og:title" content="Patrick Potvin - Atelier Informatique Potvin | Votre expert informatique de confiance depuis 1984">
-    <meta property="og:description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, cours personnalisés, sécurité anti-virus et assistance patiente. Appelez (819) 380-2999 pour tous vos tracas informatiques.">
-    <meta property="og:image" content="https://www.atelier-informatique-potvin.ca/social-share-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, création de sites web, cours personnalisés, sécurité anti-virus et assistance patiente. Discutez avec Robit, notre assistant IA flottant. Appelez (819) 380-2999.">
+    <meta property="og:image" content="https://www.atelier-informatique-potvin.ca/social-share-image.jpg"> <!-- IMPORTANT: Remplacez avec le VRAI chemin de votre image de partage ! -->
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.atelier-informatique-potvin.ca/">
     <meta property="twitter:title" content="Patrick Potvin - Atelier Informatique Potvin | Votre expert informatique de confiance depuis 1984">
-    <meta property="twitter:description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, cours personnalisés, sécurité anti-virus et assistance patiente. Appelez (819) 380-2999 pour tous vos tracas informatiques.">
-    <meta property="twitter:image" content="https://www.atelier-informatique-potvin.ca/social-share-image.jpg"> <style>
+    <meta property="twitter:description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, création de sites web, cours personnalisés, sécurité anti-virus et assistance patiente. Discutez avec Robit, notre assistant IA flottant. Appelez (819) 380-2999.">
+    <meta property="twitter:image" content="https://www.atelier-informatique-potvin.ca/social-share-image.jpg"> <!-- IMPORTANT: Remplacez avec le VRAI chemin de votre image de partage ! -->
+
+    <style>
         /* DESIGN MODE SOMBRE OPTIMISÉ POUR LE CONFORT VISUEL */
         * {
             margin: 0;
@@ -257,18 +266,7 @@
             flex-wrap: wrap;
         }
 
-        .stat {
-            text-align: center;
-            background: rgba(33, 38, 45, 0.8);
-            padding: 1.5rem 1rem;
-            border-radius: 15px;
-            border: 1px solid #30363d;
-            min-width: 120px;
-        }
-
         .stat:hover {
-            background: rgba(40, 46, 53, 0.9);
-            border: 1px solid #3d4349;
             cursor: default; /* Not clickable */
         }
 
@@ -396,16 +394,6 @@
             grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
             gap: 2rem;
             margin-bottom: 3rem;
-        }
-
-        .problem {
-            background: rgba(255,255,255,0.05);
-            padding: 2rem;
-            border-radius: 15px;
-            border-left: 5px solid #e74c3c;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
-            border: 1px solid rgba(255,255,255,0.1);
         }
 
         .problem:hover {
@@ -587,16 +575,6 @@
             gap: 2rem;
         }
 
-        .testimonial {
-            background: rgba(255,255,255,0.05);
-            padding: 2rem;
-            border-radius: 15px;
-            border-left: 5px solid #f7931e;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
-            position: relative;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-
         .testimonial::before {
             content: '"';
             position: absolute;
@@ -685,6 +663,578 @@
             border-top: 1px solid #21262d;
         }
 
+        .footer-links {
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: #8b949e;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: #c9d1d9;
+        }
+
+        /* FLOATING ROBIT ICON */
+        .floating-robit-icon {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #a93226, #e74c3c); /* Rouge vif pour attirer l'attention */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            color: white;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5), 0 0 0 5px rgba(231, 76, 60, 0.3);
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 1001; /* Au-dessus de tout */
+        }
+
+        .floating-robit-icon:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.6), 0 0 0 8px rgba(231, 76, 60, 0.5);
+        }
+
+        /* SECRET DASHBOARD MODAL */
+        .secret-dashboard-modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.85); /* Fond semi-transparent sombre */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 2000; /* Encore plus haut */
+            backdrop-filter: blur(8px);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, visibility 0.3s ease;
+        }
+
+        .secret-dashboard-modal.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .dashboard-content {
+            background: #1e242b;
+            border-radius: 20px;
+            /* padding: 3rem;  <-- REMOVED PADDING FROM HERE */
+            max-width: 90%;
+            width: 800px;
+            max-height: 90vh;
+            /* overflow-y: auto; <-- REMOVED OVERFLOW FROM HERE */
+            box-shadow: 0 15px 50px rgba(0,0,0,0.7);
+            position: relative;
+            transform: translateY(20px);
+            opacity: 0;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            border: 1px solid #30363d;
+            display: flex; /* Make it a flex container */
+            flex-direction: column; /* Stack children vertically */
+            /* justify-content: center; /* REMOVED these if main content is scrollable */
+            /* align-items: center; */
+        }
+
+        .secret-dashboard-modal.active .dashboard-content {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        /* Styles for the fixed header elements within the dashboard content */
+        .dashboard-content h2 {
+            color: #7ee787;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+            padding: 3rem 3rem 0; /* Add top, left, right padding here */
+        }
+
+        /* Styles pour le formulaire de mot de passe */
+        .password-form {
+            text-align: center;
+            margin-bottom: 2rem;
+            width: 100%;
+            max-width: 400px;
+            padding: 0 3rem; /* Add horizontal padding here */
+        }
+
+        .password-form input[type="password"] {
+            width: calc(100% - 20px);
+            padding: 12px 15px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: 1px solid #444c56;
+            background: #21262d;
+            color: white;
+            font-size: 1.1rem;
+            outline: none;
+        }
+
+        .password-form button {
+            background: linear-gradient(135deg, #f7931e, #e67e22);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+        }
+
+        .password-form button:hover {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            transform: translateY(-2px);
+        }
+
+        .password-message {
+            color: #e74c3c;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        /* New scrollable area for dashboard main content */
+        .dashboard-scrollable-area {
+            flex-grow: 1; /* Allows this div to take up remaining space */
+            overflow-y: auto; /* Makes only this part scrollable */
+            padding: 0 3rem 3rem; /* Add horizontal and bottom padding here */
+            width: 100%; /* Ensure it takes full width of its parent */
+        }
+
+        /* Contenu du tableau de bord masqué par défaut */
+        .dashboard-main-content {
+            display: none; /* Masqué par défaut */
+            width: 100%;
+        }
+
+        .dashboard-metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .metric-item {
+            background: rgba(46, 160, 67, 0.1);
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #2ea043;
+        }
+
+        .metric-item strong {
+            display: block;
+            font-size: 2.2rem;
+            color: #7ee787;
+            font-weight: 900;
+        }
+
+        .metric-item span {
+            font-size: 0.9rem;
+            color: #c9d1d9;
+        }
+
+        .dashboard-links {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .dashboard-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #f7931e, #e67e22);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+        }
+
+        .dashboard-links a:hover {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(247, 147, 30, 0.4);
+        }
+
+        .dashboard-close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: none;
+            border: none;
+            color: #c9d1d9;
+            font-size: 1.8rem;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .dashboard-close-btn:hover {
+            color: #e74c3c;
+        }
+
+        /* ROBIT CHAT SECTION (Main page section) */
+        .robit-section {
+            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        .robit-section .section-title {
+            color: #ffffff;
+        }
+
+        .robit-icon-main { /* Icône pour Robit dans la section principale */
+            font-size: 4rem;
+            color: #a93226; /* Couleur qui contraste bien avec le fond */
+            margin-bottom: 1.5rem;
+            text-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+
+        .robit-content {
+            max-width: 700px;
+            margin: 0 auto 3rem;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #e6edf3;
+        }
+
+        .robit-chat-container {
+            background: #1e242b;
+            border-radius: 15px;
+            max-width: 700px;
+            margin: 3rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+            height: 600px; /* Fixed height for chat area */
+            border: 1px solid #30363d;
+        }
+
+        .chat-header {
+            background: linear-gradient(135deg, #30363d, #21262d);
+            padding: 1rem 1.5rem;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            text-align: left;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #ffffff;
+            border-bottom: 1px solid #444c56;
+        }
+
+        .chat-messages {
+            flex-grow: 1;
+            padding: 1.5rem;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            scroll-behavior: smooth;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 0.8rem 1.2rem;
+            border-radius: 15px;
+            line-height: 1.5;
+            word-wrap: break-word; /* Ensure long words wrap */
+        }
+
+        .bot-message {
+            background: #3498db;
+            color: white;
+            align-self: flex-start;
+            border-bottom-left-radius: 5px;
+        }
+
+        .user-message {
+            background: #e74c3c;
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 5px;
+        }
+
+        .chat-input-area {
+            display: flex;
+            padding: 1rem 1.5rem;
+            border-top: 1px solid #30363d;
+            gap: 1rem;
+            background: #1e242b;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
+
+        .chat-input-area input {
+            flex-grow: 1;
+            padding: 0.8rem 1rem;
+            border: 1px solid #444c56;
+            border-radius: 25px;
+            background: #21262d;
+            color: white;
+            font-size: 1rem;
+            outline: none;
+            transition: border-color 0.3s ease;
+        }
+
+        .chat-input-area input:focus {
+            border-color: #3498db;
+        }
+
+        .chat-input-area button {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.2rem;
+            border-radius: 25px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .chat-input-area button:hover {
+            background: linear-gradient(135deg, #2980b9, #206ba4);
+            transform: translateY(-1px);
+        }
+
+        .loading-indicator {
+            text-align: center;
+            color: #c9d1d9;
+            margin-top: 1rem;
+            font-size: 0.9rem;
+        }
+
+        /* New styles for Service Enhancer in Dashboard */
+        .service-enhancer-section {
+            background: #21262d;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+            border: 1px solid #30363d;
+        }
+
+        .service-enhancer-section h3 {
+            color: #7ee787;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .service-enhancer-section textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #444c56;
+            background: #161b22;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            resize: vertical;
+            outline: none;
+        }
+
+        .service-enhancer-section textarea:focus {
+            border-color: #7ee787;
+        }
+
+        .service-enhancer-section button {
+            display: block;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #7ee787, #2ea043);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(46, 160, 67, 0.3);
+        }
+
+        .service-enhancer-section button:hover {
+            background: linear-gradient(135deg, #2ea043, #1e7e34);
+            transform: translateY(-2px);
+        }
+
+        .service-enhancer-output {
+            background: #161b22;
+            border: 1px solid #2ea043;
+            border-radius: 10px;
+            padding: 1rem;
+            min-height: 80px;
+            color: #c9d1d9;
+            text-align: left;
+            white-space: pre-wrap; /* Preserve whitespace and line breaks */
+            word-wrap: break-word; /* Break long words */
+        }
+
+        /* New styles for Communication Draft Generator in Dashboard */
+        .communication-draft-section {
+            background: #21262d;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+            border: 1px solid #30363d;
+        }
+
+        .communication-draft-section h3 {
+            color: #f7931e;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .communication-draft-section textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #444c56;
+            background: #161b22;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            resize: vertical;
+            outline: none;
+        }
+
+        .communication-draft-section textarea:focus {
+            border-color: #f7931e;
+        }
+
+        .communication-draft-section select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 8px;
+            border: 1px solid #444c56;
+            background: #161b22;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            outline: none;
+            appearance: none; /* Remove default dropdown arrow */
+            background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20256%20256%22%3E%3Cpath%20fill%3D%22%23c9d1d9%22%20d%3D%22M208.5%2096.5L128%20177L47.5%2096.5z%22%2F%3E%3C%2Fsvg%3E');
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 16px;
+        }
+
+        .communication-draft-section button {
+            display: block;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #f7931e, #e67e22);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(247, 147, 30, 0.3);
+        }
+
+        .communication-draft-section button:hover {
+            background: linear-gradient(135deg, #e67e22, #d35400);
+            transform: translateY(-2px);
+        }
+
+        .communication-draft-output {
+            background: #161b22;
+            border: 1px solid #f7931e;
+            border-radius: 10px;
+            padding: 1rem;
+            min-height: 80px;
+            color: #c9d1d9;
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+        /* New styles for FAQ Generator in Dashboard */
+        .faq-generator-section {
+            background: #21262d;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 3rem;
+            border: 1px solid #30363d;
+        }
+
+        .faq-generator-section h3 {
+            color: #58a6ff;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        .faq-generator-section textarea {
+            width: 100%;
+            min-height: 80px;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 1px solid #444c56;
+            background: #161b22;
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+            resize: vertical;
+            outline: none;
+        }
+
+        .faq-generator-section textarea:focus {
+            border-color: #58a6ff;
+        }
+
+        .faq-generator-section button {
+            display: block;
+            margin: 0 auto 1rem;
+            background: linear-gradient(135deg, #58a6ff, #3498db);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            border: none;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
+        }
+
+        .faq-generator-section button:hover {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            transform: translateY(-2px);
+        }
+
+        .faq-generator-output {
+            background: #161b22;
+            border: 1px solid #58a6ff;
+            border-radius: 10px;
+            padding: 1rem;
+            min-height: 80px;
+            color: #c9d1d9;
+            text-align: left;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+
+
         /* RESPONSIVE */
         @media (max-width: 768px) {
             .mobile-menu {
@@ -752,6 +1302,30 @@
                 padding: 10px 20px;
                 font-size: 1rem;
             }
+
+            /* Robit chat responsive adjustments */
+            .robit-chat-container {
+                height: 500px; /* Adjust height for smaller screens */
+            }
+            .chat-messages {
+                padding: 1rem;
+            }
+            .chat-input-area {
+                padding: 0.8rem 1rem;
+            }
+
+            /* Floating icon adjustment for mobile */
+            .floating-robit-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 2rem;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .dashboard-content {
+                padding: 2rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -784,7 +1358,8 @@
 
         /* Styles for OS-specific buttons */
         #btn-windows, #btn-mac {
-            display: none; /* Hidden by default, shown by JS */
+            /* Hidden by default, shown by JS */
+            display: none; 
         }
     </style>
 </head>
@@ -802,6 +1377,7 @@
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#temoignages">Témoignages</a></li>
+                    <li><a href="#assistance-distance">Soutien</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 
@@ -817,6 +1393,7 @@
     </header>
 
     <main>
+        <!-- HERO SECTION -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -851,25 +1428,61 @@
                             <a href="#services" class="btn btn-secondary">
                                 <i class="fas fa-info-circle"></i> Mes services
                             </a>
-                            <a href="https://quickbooks.intuit.com/payments/[VOTRE-LIEN-QUICKBOOKS]" class="btn btn-secondary">
-                                💳 Payer en ligne
+                            <a href="https://quickbooks.intuit.com/payments/[LIEN-PAIEMENT-CLIENT-QUICKBOOKS]" target="_blank" class="btn btn-secondary">
+                                💳 Payer une facture en ligne
                             </a>
                         </div>
                     </div>
                     
-                    <div class="hero-photo">
-                        <div class="photo-frame">
-                            <img src="patrick-photo.jpg" alt="Patrick Potvin, fondateur de l'Atelier Informatique Potvin">
-                        </div>
-                        <p class="photo-caption">
-                            <i class="fas fa-user-tie"></i> Patrick Potvin<br>
-                            <span style="opacity: 0.8;">Fondateur • Atelier Informatique Potvin</span>
-                        </p>
+                    <div class="photo-frame">
+                        <img src="patrick-photo.jpg" alt="[Image de Patrick Potvin]">
                     </div>
+                    <p class="photo-caption">
+                        <i class="fas fa-user-tie"></i> Patrick Potvin<br>
+                        <span style="opacity: 0.8;">Fondateur • Atelier Informatique Potvin</span>
+                    </p>
                 </div>
             </div>
         </section>
 
+        <!-- ROBIT CHAT SECTION (Main page section - now prominent) -->
+        <section id="robit-section" class="section robit-section">
+            <div class="container">
+                <i class="fas fa-robot robit-icon-main"></i> <!-- Icône pour Robit -->
+                <h2 class="section-title">Robit : Votre Assistant IA Gratuit !</h2>
+                <p class="section-subtitle robit-content">
+                    Besoin d'une réponse rapide à une question informatique ? Votre ordinateur fait des siennes ? Discutez avec Robit, votre assistant virtuel intelligent. Il est là pour vous offrir des conseils, des étapes de dépannage, ou vous orienter vers le bon service, **tout cela gratuitement et instantanément !**
+                </p>
+                
+                <div class="robit-chat-container fade-in">
+                    <div class="chat-header">
+                        <h3><i class="fas fa-robot"></i> Robit - Assistant IA</h3>
+                    </div>
+                    <div class="chat-messages" id="chatMessagesSection"> <!-- ID for chat messages in main section -->
+                        <!-- Message d'accueil de Robit -->
+                        <div class="message bot-message">Bonjour ! Je suis Robit, votre assistant numérique. Comment puis-je vous aider aujourd'hui ? Le diagnostic est gratuit et inclus dans la réparation.</div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="chatInputSection" placeholder="Posez votre question à Robit..."> <!-- ID for input -->
+                        <button id="sendMessageBtnSection" aria-label="Envoyer le message"><i class="fas fa-paper-plane"></i></button> <!-- ID for send button -->
+                    </div>
+                    <div id="loadingIndicatorSection" class="loading-indicator" style="display: none;"> <!-- ID for loading -->
+                        <i class="fas fa-spinner fa-spin"></i> Robit réfléchit...
+                    </div>
+                </div>
+
+                <div class="robit-cta-grid fade-in">
+                    <a href="https://quickbooks.intuit.com/payments/[LIEN-PAIEMENT-CLIENT-QUICKBOOKS]" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-file-invoice"></i> Payer une facture (clients)
+                    </a>
+                    <a href="#assistance-distance" class="btn btn-secondary">
+                        <i class="fas fa-headset"></i> Obtenir de l'assistance à distance
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROBLEMS SECTION -->
         <section class="section problems">
             <div class="container">
                 <h2 class="section-title">Je comprends vos tracas informatiques</h2>
@@ -897,6 +1510,7 @@
             </div>
         </section>
 
+        <!-- STORY SECTION -->
         <section class="section story">
             <div class="container">
                 <h2 class="section-title">Mon histoire avec l'informatique</h2>
@@ -933,6 +1547,7 @@
             </div>
         </section>
 
+        <!-- SERVICES SECTION -->
         <section id="services" class="section services">
             <div class="container">
                 <h2 class="section-title">Comment je peux vous aider</h2>
@@ -945,7 +1560,7 @@
                         </div>
                         <h3>Réparation Ordinateur</h3>
                         <p>Ordinateur qui plante, qui ne démarre plus, qui fait des affaires bizarres ? Je trouve le bobo et je le règle, en vous expliquant ce que je fais étape par étape.</p>
-                        <div class="service-price">À partir de 75$ • Diagnostic offert</div>
+                        <div class="service-price">Diagnostic gratuit et inclus dans la réparation</div>
                         <a href="tel:8193802999" class="btn btn-primary">Patrick, venez voir ça !</a>
                     </div>
 
@@ -978,10 +1593,22 @@
                         <div class="service-price">60$ de l'heure • Pas de pression</div>
                         <a href="tel:8193802999" class="btn btn-primary">Apprenez avec Patrick</a>
                     </div>
+
+                    <!-- NOUVEAU SERVICE : CRÉATION DE SITE WEB -->
+                    <div class="service">
+                        <div class="service-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h3>Création de Site Web</h3>
+                        <p>Besoin d'une présence en ligne simple et efficace ? Je conçois des sites web personnalisés pour les petites entreprises et les professionnels, à votre image.</p>
+                        <div class="service-price">Sur devis</div>
+                        <a href="tel:8193802999" class="btn btn-primary">Demandez un devis !</a>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- TESTIMONIALS SECTION -->
         <section id="temoignages" class="section testimonials">
             <div class="container">
                 <h2 class="section-title">Ce que mes clients disent de moi</h2>
@@ -1004,6 +1631,7 @@
             </div>
         </section>
 
+        <!-- CONTACT SECTION -->
         <section id="contact" class="section contact">
             <div class="container">
                 <h2 class="section-title">Appelez Patrick pour régler vos tracas !</h2>
@@ -1011,7 +1639,10 @@
                 <a href="tel:8193802999" class="phone-big">
                     <i class="fas fa-phone"></i> (819) 380-2999
                 </a>
-                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #e6edf3;">Lun-Ven 8h-17h • Sam 9h-16h • Dim urgences • Diagnostic offert</p>
+                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #e6edf3;">
+                    **Horaires réguliers :** Lun-Ven 9h-17h<br>
+                    **Urgence (surcoût) :** Lun-Ven 17h-20h, Sam, Dim & Jours fériés
+                </p>
                 
                 <div class="contact-info fade-in">
                     <div class="contact-item">
@@ -1037,11 +1668,11 @@
                             <i class="fas fa-clock"></i>
                         </div>
                         <div>
-                            <strong>Horaires</strong><br>
+                            <strong>Horaires détaillés</strong><br>
                             <span style="font-size: 0.9rem;">
-                                Lun-Ven : 8h00-17h00<br>
-                                Sam : 9h00-16h00<br>
-                                Dim : Urgences seulement
+                                Lun-Ven : 9h00-17h00 (régulier)<br>
+                                Lun-Ven : 17h00-20h00 (URGENCE)<br>
+                                Sam, Dim & Jours fériés : URGENCE
                             </span>
                         </div>
                     </div>
@@ -1050,11 +1681,11 @@
                 <a href="tel:8193802999" class="btn btn-primary" style="font-size: 1.3rem; margin-top: 2rem; margin-right: 1rem;">
                     <i class="fas fa-phone"></i> Appelez Patrick maintenant
                 </a>
-                <a href="https://quickbooks.intuit.com/payments/[VOTRE-LIEN-QUICKBOOKS]" class="btn btn-secondary" style="font-size: 1.1rem; margin-top: 2rem;">
+                <a href="https://quickbooks.intuit.com/payments/[LIEN-PAIEMENT-CLIENT-QUICKBOOKS]" target="_blank" class="btn btn-secondary" style="font-size: 1.1rem; margin-top: 2rem;">
                     💳 Payer une facture
                 </a>
                 <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9; color: #e6edf3;">
-                    <i class="fas fa-info-circle"></i> Dimanche : Urgences seulement
+                    <i class="fas fa-info-circle"></i> Le diagnostic est gratuit et inclus dans la réparation.
                 </p>
                 <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7; color: #c9d1d9;">
                     <i class="fas fa-eye"></i> Site optimisé en mode sombre pour le confort visuel
@@ -1062,7 +1693,8 @@
             </div>
         </section>
     
-        <section class="section" style="background: #161b22; color: white;">
+        <!-- SECTION ASSISTANCE À DISTANCE -->
+        <section id="assistance-distance" class="section" style="background: #161b22; color: white;">
             <div class="container">
                 <h2 class="section-title">Assistance à distance</h2>
                 <p class="section-subtitle">Téléchargez l'outil sécurisé pour permettre à Patrick de vous aider immédiatement, à distance.</p>
@@ -1085,8 +1717,171 @@
     <footer class="footer">
         <div class="container">
             <p>&copy; 2025 Atelier Informatique Potvin (AIP) - Patrick Potvin, à votre service depuis 1984 ❤️</p>
+            <!-- Le lien "Accès Robit (Client)" est retiré du footer car Robit est maintenant flottant -->
         </div>
     </footer>
+
+    <!-- FLOATING ROBIT ICON -->
+    <div class="floating-robit-icon" id="floatingRobitIcon" title="Cliquez pour parler à Robit (IA)">
+        <i class="fas fa-robot"></i>
+    </div>
+
+    <!-- SECRET DASHBOARD MODAL -->
+    <div class="secret-dashboard-modal" id="secretDashboardModal">
+        <div class="dashboard-content">
+            <button class="dashboard-close-btn" id="dashboardCloseBtn" aria-label="Fermer le tableau de bord">
+                <i class="fas fa-times-circle"></i>
+            </button>
+            <h2 style="padding-top: 3rem; padding-left: 3rem; padding-right: 3rem;"><i class="fas fa-lock"></i> Accès au Tableau de Bord Secret</h2>
+            
+            <div class="password-form" id="passwordForm" style="padding-left: 3rem; padding-right: 3rem;">
+                <p style="color: #c9d1d9; margin-bottom: 1rem;">Veuillez entrer le mot de passe pour accéder à votre tableau de bord.</p>
+                <input type="password" id="dashboardPasswordInput" placeholder="Mot de passe secret">
+                <button id="unlockDashboardBtn">Déverrouiller</button>
+                <p id="passwordMessage" class="password-message" style="display: none;"></p>
+            </div>
+
+            <!-- NEW SCROLLABLE AREA FOR DASHBOARD MAIN CONTENT -->
+            <div class="dashboard-scrollable-area">
+                <div class="dashboard-main-content" id="dashboardMainContent">
+                    <p style="text-align: center; color: #c9d1d9; margin-bottom: 2rem;">
+                        Bienvenido Patrick ! Voici un aperçu rapide de vos métriques.
+                    </p>
+
+                    <div class="dashboard-metrics">
+                        <div class="metric-item">
+                            <strong>125</strong>
+                            <span>Interventions ce mois-ci</span>
+                        </div>
+                        <div class="metric-item">
+                            <strong>85%</strong>
+                            <span>Satisfaction client (estimé)</span>
+                        </div>
+                        <div class="metric-item">
+                            <strong>5000$</strong>
+                            <span>Revenus bruts (estimé)</span>
+                        </div>
+                        <div class="metric-item">
+                            <strong>10</strong>
+                            <span>Nouveaux clients</span>
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLE FONCTIONNALITÉ IA : AMÉLIORATION DE DESCRIPTION DE SERVICE -->
+                    <div class="service-enhancer-section">
+                        <h3>✨ Améliorer une description de service avec Robit (IA)</h3>
+                        <p style="color: #c9d1d9; font-size: 0.95rem; margin-bottom: 1rem; text-align: center;">
+                            Saisissez une idée ou une courte phrase pour un service, et Robit vous aidera à la rendre plus attrayante.
+                        </p>
+                        <textarea id="serviceDescriptionInput" placeholder="Ex: 'Réparation ordinateur lent' ou 'Cours pour débutants sur tablette'"></textarea>
+                        <button id="enhanceServiceBtn"><i class="fas fa-magic"></i> Générer une description améliorée</button>
+                        <div id="enhancedServiceOutput" class="service-enhancer-output">
+                            <!-- La description améliorée apparaîtra ici -->
+                        </div>
+                        <div id="serviceEnhancerLoading" class="loading-indicator" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Robit rédige...
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLE FONCTIONNALITÉ IA : GÉNÉRATEUR DE BROUILLONS DE COMMUNICATION -->
+                    <div class="communication-draft-section">
+                        <h3>✨ Générer un brouillon de communication client (IA)</h3>
+                        <p style="color: #c9d1d9; font-size: 0.95rem; margin-bottom: 1rem; text-align: center;">
+                            Décrivez le contexte de votre message, et Robit rédigera un brouillon pour vous.
+                        </p>
+                        <textarea id="communicationContextInput" placeholder="Ex: 'Client Dupont, problème internet résolu, envoyer facture' ou 'Client Tremblay, besoin de suivi pour cours Excel'"></textarea>
+                        <select id="communicationTypeSelect">
+                            <option value="email">Email</option>
+                            <option value="sms">SMS</option>
+                        </select>
+                        <button id="generateCommunicationBtn"><i class="fas fa-paper-plane"></i> Générer le brouillon</button>
+                        <div id="communicationDraftOutput" class="communication-draft-output">
+                            <!-- Le brouillon de communication apparaîtra ici -->
+                        </div>
+                        <div id="communicationDraftLoading" class="loading-indicator" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Robit rédige...
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLE FONCTIONNALITÉ IA : GÉNÉRATEUR DE FAQ -->
+                    <div class="faq-generator-section">
+                        <h3>✨ Générateur de Questions Fréquentes (FAQ)</h3>
+                        <p style="color: #c9d1d9; font-size: 0.95rem; margin-bottom: 1rem; text-align: center;">
+                            Saisissez un sujet ou un problème courant, et Robit générera des questions/réponses pertinentes.
+                        </p>
+                        <textarea id="faqTopicInput" placeholder="Ex: 'Problèmes de connexion Wi-Fi' ou 'Mise à jour de Windows'"></textarea>
+                        <button id="generateFaqBtn"><i class="fas fa-question-circle"></i> Générer la FAQ</button>
+                        <div id="faqOutput" class="faq-generator-output">
+                            <!-- La FAQ générée apparaîtra ici -->
+                        </div>
+                        <div id="faqLoading" class="loading-indicator" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Robit prépare la FAQ...
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLE FONCTIONNALITÉ IA : VÉRIFICATEUR DE COMPATIBILITÉ LOGICIEL/MATÉRIEL -->
+                    <div class="compatibility-checker-section">
+                        <h3>✨ Vérificateur de Compatibilité Logiciel/Matériel (IA)</h3>
+                        <p style="color: #c9d1d9; font-size: 0.95rem; margin-bottom: 1rem; text-align: center;">
+                            Demandez à Robit d'évaluer la compatibilité entre un logiciel et un système, ou deux pièces de matériel.
+                        </p>
+                        <textarea id="compatibilityInput" placeholder="Ex: 'Word 2010 compatible avec Windows 11 ?' ou 'Carte graphique X avec carte mère Y ?'"></textarea>
+                        <button id="checkCompatibilityBtn"><i class="fas fa-check-circle"></i> Vérifier la compatibilité</button>
+                        <div id="compatibilityOutput" class="service-enhancer-output">
+                            <!-- Le résultat de la compatibilité apparaîtra ici -->
+                        </div>
+                        <div id="compatibilityLoading" class="loading-indicator" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Robit analyse...
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLE FONCTIONNALITÉ IA : GÉNÉRATEUR DE TITRES D'ARTICLES/TUTORIELS -->
+                    <div class="article-title-generator-section">
+                        <h3>✨ Générateur de Titres d'Articles/Tutoriels (IA)</h3>
+                        <p style="color: #c9d1d9; font-size: 0.95rem; margin-bottom: 1rem; text-align: center;">
+                            Saisissez un sujet et Robit vous proposera des titres accrocheurs pour vos contenus.
+                        </p>
+                        <textarea id="articleTopicInput" placeholder="Ex: 'Optimisation de la vitesse de l'ordinateur' ou 'Guide pour choisir un antivirus'"></textarea>
+                        <button id="generateArticleTitlesBtn"><i class="fas fa-lightbulb"></i> Générer des titres</button>
+                        <div id="articleTitlesOutput" class="faq-generator-output">
+                            <!-- Les titres générés apparaîtront ici -->
+                        </div>
+                        <div id="articleTitlesLoading" class="loading-indicator" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Robit brainstorme...
+                        </div>
+                    </div>
+
+                    <!-- NOUVELLE FONCTIONNALITÉ IA : GÉNÉRATEUR DE PUBLICATIONS POUR RÉSEAUX SOCIAUX -->
+                    <div class="social-media-post-section">
+                        <h3>✨ Générateur de Publications pour Réseaux Sociaux (IA)</h3>
+                        <p style="color: #c9d1d9; font-size: 0.95rem; margin-bottom: 1rem; text-align: center;">
+                            Saisissez une idée pour une publication sur les réseaux sociaux.
+                        </p>
+                        <textarea id="socialMediaPostInput" placeholder="Ex: 'Nouveau service de création de sites web' ou 'Conseils pour éviter les arnaques en ligne'"></textarea>
+                        <button id="generateSocialMediaPostBtn"><i class="fas fa-share-alt"></i> Générer la publication</button>
+                        <div id="socialMediaPostOutput" class="faq-generator-output">
+                            <!-- La publication générée apparaîtra ici -->
+                        </div>
+                        <div id="socialMediaPostLoading" class="loading-indicator" style="display: none;">
+                            <i class="fas fa-spinner fa-spin"></i> Robit rédige la publication...
+                        </div>
+                    </div>
+
+
+                    <div class="dashboard-links">
+                        <p style="color: #c9d1d9; margin-bottom: 1rem;">Accédez à vos outils professionnels :</p>
+                        <a href="https://quickbooks.intuit.com/[VOTRE-LIEN-ACCES-PRO-QUICKBOOKS]" target="_blank">
+                            <i class="fas fa-chart-line"></i> Accéder à mon QuickBooks Pro
+                        </a>
+                        <p style="font-size: 0.85rem; color: #8b949e; margin-top: 1rem;">
+                            *Ces métriques sont des exemples. Pour des données réelles, consultez votre Tableau de Bord QuickBooks.*
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -1162,6 +1957,631 @@
                 winBtn.style.display = 'inline-flex';
                 macBtn.style.display = 'inline-flex';
             }
+
+            // === ROBIT AI CHAT LOGIC (dans la section principale) ===
+            const chatMessagesSection = document.getElementById('chatMessagesSection');
+            const chatInputSection = document.getElementById('chatInputSection');
+            const sendMessageBtnSection = document.getElementById('sendMessageBtnSection');
+            const loadingIndicatorSection = document.getElementById('loadingIndicatorSection');
+
+            // Initialize chat history for the main section Robit
+            let chatHistorySection = [{
+                role: "model",
+                parts: [{ text: "Bonjour ! Je suis Robit, votre assistant numérique. Comment puis-je vous aider aujourd'hui ? Le diagnostic est gratuit et inclus dans la réparation." }]
+            }];
+
+            // Function to add a message to the chat display in the main section
+            function addMessageToChatSection(text, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                messageDiv.classList.add(sender === 'user' ? 'user-message' : 'bot-message');
+                // Check if the text contains a structured service recommendation
+                try {
+                    const jsonResponse = JSON.parse(text);
+                    if (jsonResponse.serviceSuggeré && jsonResponse.raison) {
+                        messageDiv.innerHTML = `**Service suggéré :** ${jsonResponse.serviceSuggeré}<br>**Raison :** ${jsonResponse.raison}`;
+                    } else {
+                        messageDiv.textContent = text;
+                    }
+                } catch (e) {
+                    messageDiv.textContent = text;
+                }
+                chatMessagesSection.appendChild(messageDiv);
+                chatMessagesSection.scrollTop = chatMessagesSection.scrollHeight; // Scroll to bottom
+            }
+
+            // Function to send message to Robit AI from the main section
+            async function sendMessageToRobitSection() {
+                const userMessage = chatInputSection.value.trim();
+                if (userMessage === '') return;
+
+                addMessageToChatSection(userMessage, 'user');
+                chatHistorySection.push({ role: "user", parts: [{ text: userMessage }] });
+                chatInputSection.value = ''; // Clear input
+
+                loadingIndicatorSection.style.display = 'block'; // Show loading indicator
+
+                try {
+                    // Determine which prompt and schema to use based on user message
+                    let promptForGemini = '';
+                    let responseMimeType = "text/plain";
+                    let responseSchema = {};
+
+                    // Check for technical term simplification request
+                    const technicalTermMatch = userMessage.match(/(qu'est-ce que|expliquez-moi|c'est quoi)\s+(le|la|l'|un|une)?\s*([a-zA-Z0-9\s-]+)\s*(\?|$)/i);
+                    if (technicalTermMatch && technicalTermMatch[3]) {
+                        const term = technicalTermMatch[3].trim();
+                        promptForGemini = `Expliquez le terme technique ou concept informatique "${term}" en français, de manière simple et concise, sans jargon technique. Utilisez un langage courant, comme si vous parliez à quelqu'un qui n'a aucune connaissance en informatique.`;
+                    } else {
+                        // Check for troubleshooting request
+                        const troubleshootingKeywords = ['problème', 'ne fonctionne pas', 'marche pas', 'bug', 'erreur', 'réparer', 'fixer', 'dépanner', 'guide de dépannage'];
+                        const isTroubleshootingRequest = troubleshootingKeywords.some(keyword => userMessage.toLowerCase().includes(keyword));
+
+                        if (isTroubleshootingRequest) {
+                            promptForGemini = `En tant que Robit, l'assistant IA de l'Atelier Informatique Potvin, proposez une liste numérotée de 3 à 5 étapes de dépannage initiales et générales pour le problème suivant : "${userMessage}". Les étapes doivent être claires, simples et faciles à suivre pour un utilisateur non-expert.`;
+                        } else {
+                            // Check for service recommendation request
+                            const serviceRecommendationKeywords = ['ordinateur lent', 'aide tablette', 'virus', 'apprendre Excel', 'problème internet', 'réparer', 'installer', 'cours', 'sécurité', 'dépannage', 'créer site web'];
+                            const isServiceRelated = serviceRecommendationKeywords.some(keyword => userMessage.toLowerCase().includes(keyword));
+
+                            if (isServiceRelated) {
+                                promptForGemini = `En tant que Robit, l'assistant IA de l'Atelier Informatique Potvin, si la question du client concerne un besoin informatique ou un problème nécessitant un service (par exemple, 'mon ordinateur est lent', 'j'ai besoin d'aide avec ma tablette', 'j'ai un virus', 'je veux apprendre Excel', 'je veux un site web'), identifiez le service le plus pertinent parmi 'Réparation Ordinateur', 'Service à Domicile', 'Protection Anti-Virus', 'Cours Personnalisés', ou 'Création de Site Web'. Répondez en format JSON avec les clés 'serviceSuggeré' (string) et 'raison' (string). Si la question ne concerne pas un service direct ou est trop vague pour une recommandation spécifique, répondez normalement en texte libre, en étant amical et professionnel, et en proposant des étapes de dépannage si c'est un problème technique.`;
+                                responseMimeType = "application/json";
+                                responseSchema = {
+                                    type: "OBJECT",
+                                    properties: {
+                                        "serviceSuggeré": { "type": "STRING" },
+                                        "raison": { "type": "STRING" }
+                                    },
+                                    propertyOrdering: ["serviceSuggeré", "raison"]
+                                };
+                            } else {
+                                // Default general chat prompt
+                                promptForGemini = "Vous êtes Robit, l'assistant IA de l'Atelier Informatique Potvin. Répondez de manière amicale, professionnelle et concise. Concentrez-vous sur les services offerts (réparation, cours, sécurité, assistance à distance, facturation client via QuickBooks, création de site web). Ne donnez pas de conseils médicaux, financiers, ou personnels. Ne parlez pas de l'accès au tableau de bord secret de Patrick. Si la question concerne l'accès à un compte ou des informations privées, redirigez l'utilisateur vers Patrick directement via les coordonnées de contact. Si la question concerne la facturation client, indiquez qu'ils peuvent payer en ligne via le lien fourni sur le site. Si la question concerne l'assistance technique, proposez le téléchargement de l'outil d'assistance à distance. Gardez vos réponses pertinentes aux services de Patrick.";
+                            }
+                        }
+                    }
+
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: promptForGemini + "\n\nQuestion du client: " + userMessage }] }],
+                        generationConfig: {
+                            responseMimeType: responseMimeType,
+                            responseSchema: responseSchema
+                        }
+                    };
+                    
+                    const apiKey = ""; // Canvas will provide this API key at runtime
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    let result;
+                    let botResponseText = '';
+
+                    if (!response.ok) {
+                        const errorText = await response.text();
+                        throw new Error(`API Error: ${response.status} ${response.statusText} - ${errorText}`);
+                    }
+
+                    try {
+                        result = await response.json();
+                    } catch (jsonError) {
+                        const rawText = await response.text(); // Get raw text if JSON parsing fails
+                        throw new Error(`Failed to parse API response as JSON: ${jsonError.message}. Raw response: ${rawText}`);
+                    }
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        
+                        botResponseText = result.candidates[0].content.parts[0].text;
+
+                        // If a JSON response was expected, try to parse it again for display
+                        if (responseMimeType === "application/json") {
+                            try {
+                                const parsedJson = JSON.parse(botResponseText);
+                                if (parsedJson.serviceSuggeré && parsedJson.raison) {
+                                    botResponseText = JSON.stringify(parsedJson); // Keep as JSON string for addMessageToChatSection to handle
+                                } else {
+                                    // If JSON structure is not as expected, treat as plain text
+                                    console.warn("Expected structured JSON but received unexpected JSON content. Displaying as plain text.");
+                                }
+                            } catch (e) {
+                                // If parsing fails, it's not valid JSON, so treat as plain text
+                                console.warn("Received non-JSON content despite JSON mimeType. Displaying as plain text.");
+                            }
+                        }
+                    } else {
+                        botResponseText = "Désolé, je n'ai pas pu générer de réponse pour le moment. Veuillez réessayer.";
+                        console.error("Erreur de l'API Gemini : Structure de réponse inattendue", result);
+                    }
+
+                    addMessageToChatSection(botResponseText, 'bot');
+                    chatHistorySection.push({ role: "model", parts: [{ text: botResponseText }] });
+
+                } catch (error) {
+                    addMessageToChatSection("Oups ! Une erreur est survenue lors de la communication avec Robit. Veuillez vérifier votre connexion ou réessayer plus tard.", 'bot');
+                    console.error("Erreur lors de l'appel à l'API Gemini:", error);
+                } finally {
+                    loadingIndicatorSection.style.display = 'none'; // Hide loading indicator
+                }
+            }
+
+            // Event listeners for sending messages in main section
+            sendMessageBtnSection.addEventListener('click', sendMessageToRobitSection);
+            chatInputSection.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    sendMessageToRobitSection();
+                }
+            });
+
+
+            // === SECRET DASHBOARD LOGIC ===
+            const floatingRobitIcon = document.getElementById('floatingRobitIcon');
+            const secretDashboardModal = document.getElementById('secretDashboardModal');
+            const dashboardCloseBtn = document.getElementById('dashboardCloseBtn');
+            const passwordForm = document.getElementById('passwordForm');
+            const dashboardPasswordInput = document.getElementById('dashboardPasswordInput');
+            const unlockDashboardBtn = document.getElementById('unlockDashboardBtn');
+            const passwordMessage = document.getElementById('passwordMessage');
+            const dashboardMainContent = document.getElementById('dashboardMainContent');
+
+            const SECRET_PASSWORD = "P@trickP0t20!Ark"; // Votre mot de passe secret
+
+            // Nouvelle logique pour la combinaison de touches et les clics
+            const requiredKeys = {
+                'shift': false, // Utiliser le nom de la touche en minuscule
+                'a': false,
+                'w': false,
+                'd': false,
+                ' ': false // Espace
+            };
+            let allRequiredKeysPressed = false;
+            let clickCountForDashboard = 0;
+            let dashboardActivationTimeout; // Pour réinitialiser si les clics ne sont pas assez rapides
+
+            // Écouteur pour les touches enfoncées
+            document.addEventListener('keydown', function(e) {
+                const key = e.key.toLowerCase(); // Convertir la touche en minuscule pour la comparaison
+
+                // Mettre à jour l'état de la touche si elle fait partie des requises
+                if (key === 'shift') {
+                    requiredKeys['shift'] = true;
+                } else if (requiredKeys.hasOwnProperty(key)) {
+                    requiredKeys[key] = true;
+                }
+
+                // Vérifier si toutes les touches requises sont actuellement enfoncées
+                const currentKeysPressed = Object.keys(requiredKeys).every(k => requiredKeys[k] === true);
+
+                if (currentKeysPressed && !allRequiredKeysPressed) { // Si toutes les touches sont enfoncées pour la première fois
+                    allRequiredKeysPressed = true;
+                    console.log("DEBUG: Toutes les touches requises sont enfoncées. Fenêtre de clic activée.");
+                    
+                    // Démarrer un minuteur pour les clics si non déjà actif
+                    if (dashboardActivationTimeout) {
+                        clearTimeout(dashboardActivationTimeout); // Réinitialiser le minuteur précédent
+                    }
+                    clickCountForDashboard = 0; // Réinitialiser le compteur de clics pour cette tentative
+                    dashboardActivationTimeout = setTimeout(() => {
+                        console.log("DEBUG: Fenêtre de clic expirée. Réinitialisation.");
+                        allRequiredKeysPressed = false;
+                        clickCountForDashboard = 0;
+                        dashboardActivationTimeout = null;
+                        // Réinitialiser l'état des touches requises pour la prochaine tentative
+                        for (const k in requiredKeys) {
+                            requiredKeys[k] = false;
+                        }
+                    }, 2000); // Fenêtre de 2 secondes pour les clics
+                }
+            });
+
+            // Écouteur pour les touches relâchées
+            document.addEventListener('keyup', function(e) {
+                const key = e.key.toLowerCase();
+
+                // Mettre à jour l'état de la touche si elle fait partie des requises
+                if (key === 'shift') {
+                    requiredKeys['shift'] = false;
+                } else if (requiredKeys.hasOwnProperty(key)) {
+                    requiredKeys[key] = false;
+                }
+
+                // Si une touche requise est relâchée, la séquence "toutes les touches enfoncées" est rompue
+                if (!Object.keys(requiredKeys).every(k => requiredKeys[k] === false)) { // Si au moins une touche est encore enfoncée
+                    // Laisser allRequiredKeysPressed à true si c'était le cas, pour permettre les clics restants dans la fenêtre
+                } else { // Toutes les touches requises sont relâchées
+                    // Si la fenêtre de clic n'a pas été activée, ou si elle a expiré, on s'assure que le flag est à false
+                    // allRequiredKeysPressed = false; // Ne pas réinitialiser ici, le timeout le fera
+                }
+            });
+
+
+            // Écouteur pour les clics sur l'icône flottante de Robit
+            floatingRobitIcon.addEventListener('click', function() {
+                console.log("DEBUG: Clic sur l'icône Robit.");
+                console.log("DEBUG: allRequiredKeysPressed:", allRequiredKeysPressed);
+                console.log("DEBUG: clickCountForDashboard (avant):", clickCountForDashboard);
+
+                // Si la séquence de touches est active, compter les clics pour le tableau de bord
+                if (allRequiredKeysPressed) {
+                    clickCountForDashboard++;
+                    console.log("DEBUG: Clic pour le tableau de bord. Compteur:", clickCountForDashboard);
+                    if (clickCountForDashboard >= 5) {
+                        console.log("DEBUG: Clics suffisants. Ouverture du tableau de bord.");
+                        clearTimeout(dashboardActivationTimeout); // Arrêter le minuteur
+                        secretDashboardModal.classList.add('active');
+                        passwordForm.style.display = 'block'; // Afficher le formulaire de mot de passe
+                        dashboardMainContent.style.display = 'none'; // Masquer le contenu principal initialement
+                        passwordMessage.style.display = 'none'; // Masquer les messages précédents
+                        dashboardPasswordInput.value = ''; // Effacer l'entrée du mot de passe
+                        dashboardPasswordInput.focus(); // Mettre le focus sur l'entrée du mot de passe
+
+                        // Réinitialiser les états après une activation réussie
+                        allRequiredKeysPressed = false;
+                        clickCountForDashboard = 0;
+                        dashboardActivationTimeout = null;
+                        for (const k in requiredKeys) {
+                            requiredKeys[k] = false;
+                        }
+                    }
+                } else {
+                    // Si la séquence de touches N'EST PAS active, un simple clic défile vers la section Robit
+                    console.log("DEBUG: Clic normal. Défilement vers la section Robit.");
+                    const robitSection = document.getElementById('robit-section');
+                    if (robitSection) {
+                        robitSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+
+            // Gérer la soumission du mot de passe
+            unlockDashboardBtn.addEventListener('click', function() {
+                if (dashboardPasswordInput.value === SECRET_PASSWORD) {
+                    passwordForm.style.display = 'none';
+                    dashboardMainContent.style.display = 'block';
+                    passwordMessage.style.display = 'none';
+                } else {
+                    passwordMessage.textContent = "Mot de passe incorrect. Veuillez réessayer.";
+                    passwordMessage.style.display = 'block';
+                    dashboardPasswordInput.value = ''; // Effacer l'entrée en cas de mot de passe incorrect
+                }
+            });
+
+            // Permettre la touche "Entrée" pour soumettre le mot de passe
+            dashboardPasswordInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    unlockDashboardBtn.click(); // Simuler un clic sur le bouton de déverrouillage
+                }
+            });
+
+            // Fermer le bouton du tableau de bord
+            dashboardCloseBtn.addEventListener('click', function() {
+                secretDashboardModal.classList.remove('active');
+            });
+
+            // Fermer le tableau de bord si on clique en dehors du contenu
+            secretDashboardModal.addEventListener('click', function(e) {
+                if (e.target === secretDashboardModal) {
+                    secretDashboardModal.classList.remove('active');
+                }
+            });
+
+            // === LOGIQUE D'AMÉLIORATION DE DESCRIPTION DE SERVICE (dans le tableau de bord secret) ===
+            const serviceDescriptionInput = document.getElementById('serviceDescriptionInput');
+            const enhanceServiceBtn = document.getElementById('enhanceServiceBtn');
+            const enhancedServiceOutput = document.getElementById('enhancedServiceOutput');
+            const serviceEnhancerLoading = document.getElementById('serviceEnhancerLoading');
+
+            enhanceServiceBtn.addEventListener('click', async function() {
+                const inputDescription = serviceDescriptionInput.value.trim();
+                if (inputDescription === '') {
+                    enhancedServiceOutput.textContent = "Veuillez entrer une description à améliorer.";
+                    return;
+                }
+
+                serviceEnhancerLoading.style.display = 'block';
+                enhancedServiceOutput.textContent = ''; // Effacer la sortie précédente
+
+                try {
+                    const prompt = `En tant qu'expert en marketing pour l'Atelier Informatique Potvin, reformulez et développez la description de service suivante pour la rendre plus attrayante, orientée bénéfices client, et optimisée pour le web. Mettez en avant la patience, l'expertise et le service à domicile de Patrick. La description originale est : "${inputDescription}".`;
+                    
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                        generationConfig: {} // Pas de configuration spéciale pour la structure ici
+                    };
+                    const apiKey = ""; // Canvas fournira cette clé API à l'exécution
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const enhancedText = result.candidates[0].content.parts[0].text;
+                        enhancedServiceOutput.textContent = enhancedText;
+                    } else {
+                        enhancedServiceOutput.textContent = "Désolé, je n'ai pas pu améliorer la description pour le moment.";
+                        console.error("Erreur de l'API Gemini (Service Enhancer) : Structure de réponse inattendue", result);
+                    }
+                } catch (error) {
+                    enhancedServiceOutput.textContent = "Oups ! Une erreur est survenue lors de l'amélioration. Veuillez réessayer.";
+                    console.error("Erreur lors de l'appel à l'API Gemini (Service Enhancer):", error);
+                } finally {
+                    serviceEnhancerLoading.style.display = 'none';
+                }
+            });
+
+            // === LOGIQUE DU GÉNÉRATEUR DE BROUILLONS DE COMMUNICATION (dans le tableau de bord secret) ===
+            const communicationContextInput = document.getElementById('communicationContextInput');
+            const communicationTypeSelect = document.getElementById('communicationTypeSelect');
+            const generateCommunicationBtn = document.getElementById('generateCommunicationBtn');
+            const communicationDraftOutput = document.getElementById('communicationDraftOutput');
+            const communicationDraftLoading = document.getElementById('communicationDraftLoading');
+
+            generateCommunicationBtn.addEventListener('click', async function() {
+                const context = communicationContextInput.value.trim();
+                const type = communicationTypeSelect.value; // 'email' ou 'sms'
+
+                if (context === '') {
+                    communicationDraftOutput.textContent = "Veuillez décrire le contexte du message.";
+                    return;
+                }
+
+                communicationDraftLoading.style.display = 'block';
+                communicationDraftOutput.textContent = ''; // Effacer la sortie précédente
+
+                try {
+                    const prompt = `En tant que Robit, votre assistant de communication pour l'Atelier Informatique Potvin, rédigez un brouillon de ${type} professionnel et amical basé sur le contexte suivant : "${context}". Adaptez le ton pour un client de Patrick Potvin. Incluez une salutation appropriée et une formule de politesse.`;
+                    
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                        generationConfig: {}
+                    };
+                    const apiKey = ""; // Canvas fournira cette clé API à l'exécution
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const draftText = result.candidates[0].content.parts[0].text;
+                        communicationDraftOutput.textContent = draftText;
+                    } else {
+                        communicationDraftOutput.textContent = "Désolé, je n'ai pas pu générer le brouillon pour le moment.";
+                        console.error("Erreur de l'API Gemini (Communication Draft) : Structure de réponse inattendue", result);
+                    }
+                } catch (error) {
+                    communicationDraftOutput.textContent = "Oups ! Une erreur est survenue lors de la génération du brouillon. Veuillez réessayer.";
+                    console.error("Erreur lors de l'appel à l'API Gemini (Communication Draft):", error);
+                } finally {
+                    communicationDraftLoading.style.display = 'none';
+                }
+            });
+
+            // === LOGIQUE DU GÉNÉRATEUR DE FAQ (dans le tableau de bord secret) ===
+            const faqTopicInput = document.getElementById('faqTopicInput');
+            const generateFaqBtn = document.getElementById('generateFaqBtn');
+            const faqOutput = document.getElementById('faqOutput');
+            const faqLoading = document.getElementById('faqLoading');
+
+            generateFaqBtn.addEventListener('click', async function() {
+                const topic = faqTopicInput.value.trim();
+                if (topic === '') {
+                    faqOutput.textContent = "Veuillez entrer un sujet pour la FAQ.";
+                    return;
+                }
+
+                faqLoading.style.display = 'block';
+                faqOutput.textContent = ''; // Clear previous output
+
+                try {
+                    const prompt = `En tant que Robit, l'assistant IA de l'Atelier Informatique Potvin, générez une liste de 3 à 5 questions fréquemment posées (FAQ) et leurs réponses concises sur le sujet suivant : "${topic}". Les réponses doivent être claires, amicales et utiles pour les clients de Patrick. Formatez la sortie avec "Q: " pour les questions et "R: " pour les réponses, avec une ligne vide entre chaque paire Q/R.`;
+                    
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                        generationConfig: {}
+                    };
+                    const apiKey = ""; // Canvas fournira cette clé API à l'exécution
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const faqText = result.candidates[0].content.parts[0].text;
+                        faqOutput.textContent = faqText;
+                    } else {
+                        faqOutput.textContent = "Désolé, je n'ai pas pu générer la FAQ pour le moment.";
+                        console.error("Erreur de l'API Gemini (FAQ Generator) : Structure de réponse inattendue", result);
+                    }
+                } catch (error) {
+                    faqOutput.textContent = "Oups ! Une erreur est survenue lors de la génération de la FAQ. Veuillez réessayer.";
+                    console.error("Erreur lors de l'appel à l'API Gemini (FAQ Generator):", error);
+                } finally {
+                    faqLoading.style.display = 'none';
+                }
+            });
+
+            // === LOGIQUE DU VÉRIFICATEUR DE COMPATIBILITÉ LOGICIEL/MATÉRIEL (dans le tableau de bord secret) ===
+            const compatibilityInput = document.getElementById('compatibilityInput');
+            const checkCompatibilityBtn = document.getElementById('checkCompatibilityBtn');
+            const compatibilityOutput = document.getElementById('compatibilityOutput');
+            const compatibilityLoading = document.getElementById('compatibilityLoading');
+
+            checkCompatibilityBtn.addEventListener('click', async function() {
+                const query = compatibilityInput.value.trim();
+                if (query === '') {
+                    compatibilityOutput.textContent = "Veuillez entrer une question de compatibilité.";
+                    return;
+                }
+
+                compatibilityLoading.style.display = 'block';
+                compatibilityOutput.textContent = ''; // Clear previous output
+
+                try {
+                    const prompt = `En tant que Robit, l'assistant IA de l'Atelier Informatique Potvin, évaluez la compatibilité pour la requête suivante : "${query}". Fournissez une réponse claire et concise, indiquant si c'est compatible, non compatible, ou si des conditions spécifiques s'appliquent. Si possible, donnez une brève raison. Utilisez un ton professionnel et serviable.`;
+                    
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                        generationConfig: {}
+                    };
+                    const apiKey = ""; // Canvas fournira cette clé API à l'exécution
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const compatibilityText = result.candidates[0].content.parts[0].text;
+                        compatibilityOutput.textContent = compatibilityText;
+                    } else {
+                        compatibilityOutput.textContent = "Désolé, je n'ai pas pu vérifier la compatibilité pour le moment.";
+                        console.error("Erreur de l'API Gemini (Compatibility Checker) : Structure de réponse inattendue", result);
+                    }
+                } catch (error) {
+                    compatibilityOutput.textContent = "Oups ! Une erreur est survenue lors de la vérification de la compatibilité. Veuillez réessayer.";
+                    console.error("Erreur lors de l'appel à l'API Gemini (Compatibility Checker):", error);
+                } finally {
+                    compatibilityLoading.style.display = 'none';
+                }
+            });
+
+            // === LOGIQUE DU GÉNÉRATEUR DE TITRES D'ARTICLES/TUTORIELS (dans le tableau de bord secret) ===
+            const articleTopicInput = document.getElementById('articleTopicInput');
+            const generateArticleTitlesBtn = document.getElementById('generateArticleTitlesBtn');
+            const articleTitlesOutput = document.getElementById('articleTitlesOutput');
+            const articleTitlesLoading = document.getElementById('articleTitlesLoading');
+
+            generateArticleTitlesBtn.addEventListener('click', async function() {
+                const topic = articleTopicInput.value.trim();
+                if (topic === '') {
+                    articleTitlesOutput.textContent = "Veuillez entrer un sujet pour générer des titres.";
+                    return;
+                }
+
+                articleTitlesLoading.style.display = 'block';
+                articleTitlesOutput.textContent = ''; // Clear previous output
+
+                try {
+                    const prompt = `En tant que Robit, l'assistant IA de l'Atelier Informatique Potvin, générez 5 titres accrocheurs et optimisés pour le SEO pour un article de blog ou un tutoriel sur le sujet suivant : "${topic}". Les titres doivent être pertinents pour un public cherchant des solutions informatiques.`;
+                    
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                        generationConfig: {}
+                    };
+                    const apiKey = ""; // Canvas fournira cette clé API à l'exécution
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const titlesText = result.candidates[0].content.parts[0].text;
+                        articleTitlesOutput.textContent = titlesText;
+                    } else {
+                        articleTitlesOutput.textContent = "Désolé, je n'ai pas pu générer de titres pour le moment.";
+                        console.error("Erreur de l'API Gemini (Article Titles Generator) : Structure de réponse inattendue", result);
+                    }
+                } catch (error) {
+                    articleTitlesOutput.textContent = "Oups ! Une erreur est survenue lors de la génération des titres. Veuillez réessayer.";
+                    console.error("Erreur lors de l'appel à l'API Gemini (Article Titles Generator):", error);
+                } finally {
+                    articleTitlesLoading.style.display = 'none';
+                }
+            });
+
+            // === LOGIQUE DU GÉNÉRATEUR DE PUBLICATIONS POUR RÉSEAUX SOCIAUX (dans le tableau de bord secret) ===
+            const socialMediaPostInput = document.getElementById('socialMediaPostInput');
+            const generateSocialMediaPostBtn = document.getElementById('generateSocialMediaPostBtn');
+            const socialMediaPostOutput = document.getElementById('socialMediaPostOutput');
+            const socialMediaPostLoading = document.getElementById('socialMediaPostLoading');
+
+            generateSocialMediaPostBtn.addEventListener('click', async function() {
+                const topic = socialMediaPostInput.value.trim();
+                if (topic === '') {
+                    socialMediaPostOutput.textContent = "Veuillez entrer un sujet pour la publication.";
+                    return;
+                }
+
+                socialMediaPostLoading.style.display = 'block';
+                socialMediaPostOutput.textContent = ''; // Clear previous output
+
+                try {
+                    const prompt = `En tant que Robit, l'assistant IA de l'Atelier Informatique Potvin, générez une publication courte et engageante pour les réseaux sociaux (Facebook/LinkedIn) sur le sujet suivant : "${topic}". Incluez 2-3 hashtags pertinents et un appel à l'action simple (ex: 'Contactez-nous !'). Le ton doit être professionnel mais amical, adapté à la marque de Patrick.`;
+                    
+                    const payload = {
+                        contents: [{ role: "user", parts: [{ text: prompt }] }],
+                        generationConfig: {}
+                    };
+                    const apiKey = ""; // Canvas fournira cette clé API à l'exécution
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const postText = result.candidates[0].content.parts[0].text;
+                        socialMediaPostOutput.textContent = postText;
+                    } else {
+                        socialMediaPostOutput.textContent = "Désolé, je n'ai pas pu générer la publication pour le moment.";
+                        console.error("Erreur de l'API Gemini (Social Media Post Generator) : Structure de réponse inattendue", result);
+                    }
+                } catch (error) {
+                    socialMediaPostOutput.textContent = "Oups ! Une erreur est survenue lors de la génération de la publication. Veuillez réessayer.";
+                    console.error("Erreur lors de l'appel à l'API Gemini (Social Media Post Generator):", error);
+                } finally {
+                    socialMediaPostLoading.style.display = 'none';
+                }
+            });
         });
     </script>
 </body>
