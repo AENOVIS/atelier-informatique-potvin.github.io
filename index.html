@@ -3,15 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Potvin - Atelier Informatique Potvin | Expert depuis 1984</title>
-    <meta name="description" content="Patrick Potvin, expert informatique depuis 1984. Service à domicile patient et professionnel. Réparation, cours, sécurité. Appelez (819) 380-2999">
-    <meta name="keywords" content="réparation ordinateur, service informatique domicile, cours informatique, Patrick Potvin, Atelier Informatique Potvin">
+    <title>Patrick Potvin - Atelier Informatique Potvin | Votre expert informatique de confiance depuis 1984</title>
+    <meta name="description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, cours personnalisés, sécurité anti-virus et assistance patiente. Appelez (819) 380-2999 pour tous vos tracas informatiques.">
+    <meta name="keywords" content="réparation ordinateur, service informatique domicile, cours informatique, Patrick Potvin, Atelier Informatique Potvin, dépannage informatique, Nicolet, Centre-du-Québec, virus, ordinateur lent, support informatique, assistance à distance, technologie seniors">
     <link rel="canonical" href="https://www.atelier-informatique-potvin.ca">
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     
-    <style>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.atelier-informatique-potvin.ca/">
+    <meta property="og:title" content="Patrick Potvin - Atelier Informatique Potvin | Votre expert informatique de confiance depuis 1984">
+    <meta property="og:description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, cours personnalisés, sécurité anti-virus et assistance patiente. Appelez (819) 380-2999 pour tous vos tracas informatiques.">
+    <meta property="og:image" content="https://www.atelier-informatique-potvin.ca/social-share-image.jpg"> <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.atelier-informatique-potvin.ca/">
+    <meta property="twitter:title" content="Patrick Potvin - Atelier Informatique Potvin | Votre expert informatique de confiance depuis 1984">
+    <meta property="twitter:description" content="Patrick Potvin, expert informatique à domicile dans le Centre-du-Québec depuis 1984. Spécialisé en réparation d'ordinateurs, cours personnalisés, sécurité anti-virus et assistance patiente. Appelez (819) 380-2999 pour tous vos tracas informatiques.">
+    <meta property="twitter:image" content="https://www.atelier-informatique-potvin.ca/social-share-image.jpg"> <style>
         /* DESIGN MODE SOMBRE OPTIMISÉ POUR LE CONFORT VISUEL */
         * {
             margin: 0;
@@ -152,222 +160,23 @@
             cursor: pointer;
         }
 
-        /* ROBIT ASSISTANT */
-        .robit-container {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 1001;
-        }
-
-        .robit-button {
-            width: 60px;
-            height: 60px;
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border: none;
-            border-radius: 50%;
-            color: white;
-            font-size: 24px;
-            cursor: pointer;
-            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3);
-            transition: all 0.3s ease;
-            animation: pulse 2s infinite;
-        }
-
-        .robit-button:hover {
-            transform: scale(1.1);
-            box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
-        }
-
-        @keyframes pulse {
-            0% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3); }
-            50% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.6); }
-            100% { box-shadow: 0 4px 20px rgba(102, 126, 234, 0.3); }
-        }
-
-        .robit-chat {
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            width: 350px;
-            height: 450px;
-            background: #21262d;
-            border-radius: 15px;
-            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
-            display: none;
+        /* Mobile menu specific styles */
+        .nav-menu.active {
+            display: flex; /* Override display: none on mobile */
             flex-direction: column;
-            border: 1px solid #30363d;
-            z-index: 1002;
-        }
-
-        .robit-chat.active {
-            display: flex;
-        }
-
-        .robit-header {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            padding: 15px;
-            border-radius: 15px 15px 0 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .robit-title {
-            font-weight: 700;
-            color: white;
-            font-size: 1.1rem;
-        }
-
-        .robit-close {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 18px;
-            cursor: pointer;
-        }
-
-        .robit-messages {
-            flex: 1;
-            padding: 15px;
-            overflow-y: auto;
-            background: #161b22;
-        }
-
-        .robit-message {
-            margin-bottom: 15px;
-            padding: 10px 15px;
-            border-radius: 10px;
-            max-width: 80%;
-            word-wrap: break-word;
-        }
-
-        .robit-message.user {
-            background: #667eea;
-            color: white;
-            margin-left: auto;
-        }
-
-        .robit-message.bot {
-            background: #30363d;
-            color: #e6edf3;
-        }
-
-        .robit-input-container {
-            padding: 15px;
-            border-top: 1px solid #30363d;
-            display: flex;
-            gap: 10px;
-        }
-
-        .robit-input {
-            flex: 1;
-            padding: 10px;
-            border: 1px solid #30363d;
-            border-radius: 20px;
-            background: #0d1117;
-            color: white;
-            font-size: 14px;
-        }
-
-        .robit-send {
-            background: linear-gradient(135deg, #667eea, #764ba2);
-            border: none;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 20px;
-            cursor: pointer;
-            font-size: 14px;
-        }
-
-        /* EASTER EGG DASHBOARD */
-        .dashboard {
-            position: fixed;
-            top: 0;
+            position: absolute;
+            top: 80px; /* Adjust based on header height */
             left: 0;
             width: 100%;
-            height: 100%;
-            background: rgba(0,0,0,0.95);
-            z-index: 2000;
-            display: none;
-            justify-content: center;
-            align-items: center;
+            background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            padding: 1rem 0;
+            border-top: 1px solid #30363d;
         }
 
-        .dashboard.active {
-            display: flex;
-        }
-
-        .dashboard-content {
-            background: #161b22;
-            border-radius: 20px;
-            padding: 30px;
-            max-width: 800px;
-            width: 90%;
-            max-height: 80%;
-            overflow-y: auto;
-            border: 2px solid #30363d;
-            position: relative;
-        }
-
-        .dashboard-header {
+        .nav-menu.active li {
             text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #30363d;
-        }
-
-        .dashboard-title {
-            font-size: 2.5rem;
-            color: #58a6ff;
-            margin-bottom: 10px;
-            text-shadow: 0 0 20px rgba(88, 166, 255, 0.5);
-        }
-
-        .dashboard-subtitle {
-            color: #7ee787;
-            font-size: 1.2rem;
-        }
-
-        .dashboard-close {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            background: #e74c3c;
-            border: none;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 20px;
-        }
-
-        .dashboard-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-
-        .dashboard-card {
-            background: #21262d;
-            border-radius: 15px;
-            padding: 20px;
-            border: 1px solid #30363d;
-            text-align: center;
-        }
-
-        .dashboard-card h3 {
-            color: #58a6ff;
-            margin-bottom: 15px;
-            font-size: 1.3rem;
-        }
-
-        .dashboard-stat {
-            font-size: 2rem;
-            font-weight: 900;
-            color: #7ee787;
-            margin-bottom: 10px;
+            margin: 0.5rem 0;
         }
 
         /* HERO SECTION */
@@ -460,6 +269,7 @@
         .stat:hover {
             background: rgba(40, 46, 53, 0.9);
             border: 1px solid #3d4349;
+            cursor: default; /* Not clickable */
         }
 
         .stat-number {
@@ -882,7 +692,7 @@
             }
 
             .nav-menu {
-                display: none;
+                display: none; /* Hide by default on mobile */
             }
 
             .logo {
@@ -942,21 +752,6 @@
                 padding: 10px 20px;
                 font-size: 1rem;
             }
-
-            .robit-chat {
-                width: 320px;
-                height: 400px;
-                right: 10px;
-            }
-
-            .dashboard-content {
-                width: 95%;
-                padding: 20px;
-            }
-
-            .dashboard-grid {
-                grid-template-columns: 1fr;
-            }
         }
 
         @media (max-width: 480px) {
@@ -973,12 +768,6 @@
                 flex-direction: column;
                 align-items: center;
             }
-
-            .robit-chat {
-                width: 280px;
-                height: 350px;
-                bottom: 80px;
-            }
         }
 
         /* ANIMATIONS */
@@ -993,26 +782,9 @@
             transform: translateY(0);
         }
 
-        .typing-indicator {
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            background: #667eea;
-            animation: typing 1.4s infinite;
-        }
-
-        .typing-indicator:nth-child(2) {
-            animation-delay: 0.2s;
-        }
-
-        .typing-indicator:nth-child(3) {
-            animation-delay: 0.4s;
-        }
-
-        @keyframes typing {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-10px); }
+        /* Styles for OS-specific buttons */
+        #btn-windows, #btn-mac {
+            display: none; /* Hidden by default, shown by JS */
         }
     </style>
 </head>
@@ -1022,14 +794,13 @@
             <nav>
                 <a href="#" class="logo">
                     <div class="logo-icon">
-                        <img src="logo-aip.png" alt="AIP Logo">
+                        <img src="logo-aip.png" alt="Logo de l'Atelier Informatique Potvin">
                     </div>
                     <span>Atelier Informatique Potvin</span>
                 </a>
                 
-                <ul class="nav-menu">
+                <ul class="nav-menu" id="navMenu">
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#soutien">Soutien</a></li>
                     <li><a href="#temoignages">Témoignages</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -1038,98 +809,14 @@
                     <i class="fas fa-phone"></i> (819) 380-2999
                 </a>
                 
-                <button class="mobile-menu">
+                <button class="mobile-menu" id="mobileMenuButton" aria-label="Ouvrir le menu mobile">
                     <i class="fas fa-bars"></i>
                 </button>
             </nav>
         </div>
     </header>
 
-    <!-- ROBIT ASSISTANT -->
-    <div class="robit-container">
-        <button class="robit-button" onclick="toggleRobit()">
-            <i class="fas fa-robot"></i>
-        </button>
-        
-        <div class="robit-chat" id="robitChat">
-            <div class="robit-header">
-                <div class="robit-title">
-                    <i class="fas fa-robot"></i> ROBIT Assistant
-                </div>
-                <button class="robit-close" onclick="toggleRobit()">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            
-            <div class="robit-messages" id="robitMessages">
-                <div class="robit-message bot">
-                    👋 Salut ! Je suis ROBIT, l'assistant virtuel de Patrick. Comment puis-je vous aider aujourd'hui ?
-                </div>
-            </div>
-            
-            <div class="robit-input-container">
-                <input type="text" class="robit-input" id="robitInput" placeholder="Tapez votre message..." onkeypress="handleRobitEnter(event)">
-                <button class="robit-send" onclick="sendRobitMessage()">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- EASTER EGG DASHBOARD -->
-    <div class="dashboard" id="dashboard">
-        <div class="dashboard-content">
-            <button class="dashboard-close" onclick="closeDashboard()">
-                <i class="fas fa-times"></i>
-            </button>
-            
-            <div class="dashboard-header">
-                <h2 class="dashboard-title">🔧 DASHBOARD PATRICK</h2>
-                <p class="dashboard-subtitle">Panneau de contrôle avancé - Accès Easter Egg</p>
-            </div>
-            
-            <div class="dashboard-grid">
-                <div class="dashboard-card">
-                    <h3>📊 Statistiques du site</h3>
-                    <div class="dashboard-stat">2,847</div>
-                    <p>Visiteurs aujourd'hui</p>
-                </div>
-                
-                <div class="dashboard-card">
-                    <h3>📞 Appels reçus</h3>
-                    <div class="dashboard-stat">23</div>
-                    <p>Nouveaux clients cette semaine</p>
-                </div>
-                
-                <div class="dashboard-card">
-                    <h3>🤖 ROBIT Stats</h3>
-                    <div class="dashboard-stat">156</div>
-                    <p>Conversations aujourd'hui</p>
-                </div>
-                
-                <div class="dashboard-card">
-                    <h3>⚡ Système</h3>
-                    <div class="dashboard-stat">98%</div>
-                    <p>Uptime serveur</p>
-                </div>
-                
-                <div class="dashboard-card">
-                    <h3>🎯 Conversions</h3>
-                    <div class="dashboard-stat">7.2%</div>
-                    <p>Taux de conversion</p>
-                </div>
-                
-                <div class="dashboard-card">
-                    <h3>🔑 Easter Egg</h3>
-                    <div class="dashboard-stat">🎉</div>
-                    <p>Félicitations ! Vous avez trouvé le secret de Patrick !</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <main>
-        <!-- HERO SECTION -->
         <section class="hero">
             <div class="container">
                 <div class="hero-content">
@@ -1137,10 +824,9 @@
                         <div class="hero-badge">
                             ❤️ Passionné depuis l'âge de 9 ans
                         </div>
-                        <h1>Salut, moi c'est Patrick !<br>Votre expert informatique de confiance</h1>
+                        <h1>Salut, moi c'est Patrick ! Votre **expert informatique de confiance**.</h1>
                         <p class="hero-subtitle">
-                            À 12 ans, je partageais déjà mes connaissances • 41 ans plus tard, je continue !<br>
-                            L'informatique expliquée simplement, à votre rythme.
+                            À 12 ans, je partageais déjà mes connaissances, et **41 ans plus tard, ma passion est toujours la même !** Je vous explique l'informatique simplement, à votre rythme.
                         </p>
                         
                         <div class="hero-stats">
@@ -1153,8 +839,8 @@
                                 <span class="stat-label">Clients aidés</span>
                             </div>
                             <div class="stat">
-                                <span class="stat-number">7j</span>
-                                <span class="stat-label">Disponible</span>
+                                <span class="stat-number">7j/7</span>
+                                <span class="stat-label">Disponible (Urgence Dim.)</span>
                             </div>
                         </div>
 
@@ -1165,7 +851,7 @@
                             <a href="#services" class="btn btn-secondary">
                                 <i class="fas fa-info-circle"></i> Mes services
                             </a>
-                            <a href="https://quickbooks.intuit.com/payments/[TON-LIEN]" class="btn btn-secondary">
+                            <a href="https://quickbooks.intuit.com/payments/[VOTRE-LIEN-QUICKBOOKS]" class="btn btn-secondary">
                                 💳 Payer en ligne
                             </a>
                         </div>
@@ -1173,7 +859,7 @@
                     
                     <div class="hero-photo">
                         <div class="photo-frame">
-                            <img src="patrick-photo.jpg" alt="Patrick Potvin">
+                            <img src="patrick-photo.jpg" alt="Patrick Potvin, fondateur de l'Atelier Informatique Potvin">
                         </div>
                         <p class="photo-caption">
                             <i class="fas fa-user-tie"></i> Patrick Potvin<br>
@@ -1184,10 +870,9 @@
             </div>
         </section>
 
-        <!-- PROBLEMS SECTION -->
         <section class="section problems">
             <div class="container">
-                <h2 class="section-title">J'comprends vos tracas informatiques</h2>
+                <h2 class="section-title">Je comprends vos tracas informatiques</h2>
                 <p class="section-subtitle">Après 41 ans dans le domaine, j'ai vu tous les problèmes possibles. Et j'ai surtout appris à les expliquer simplement !</p>
                 
                 <div class="problems-grid fade-in">
@@ -1207,12 +892,11 @@
 
                 <div class="solution-box fade-in">
                     <h3><i class="fas fa-handshake"></i> Moi, Patrick, je règle vos problèmes avec le sourire</h3>
-                    <p>Depuis 1984, j'aide des gens comme vous à apprivoiser leurs appareils. Je me déplace chez vous, je prends tout le temps nécessaire, et je vous explique tout en bon français. Aucune question est trop bête, aucun problème trop simple. Mon travail, c'est de vous redonner confiance !</p>
+                    <p>Depuis 1984, j'aide des gens comme vous à apprivoiser leurs appareils. Je me déplace chez vous, je prends tout le temps nécessaire, et je vous explique tout en bon français. Aucune question n'est trop bête, aucun problème trop simple. Mon travail, c'est de vous redonner confiance !</p>
                 </div>
             </div>
         </section>
 
-        <!-- STORY SECTION -->
         <section class="section story">
             <div class="container">
                 <h2 class="section-title">Mon histoire avec l'informatique</h2>
@@ -1235,10 +919,10 @@
                     </div>
                     
                     <p style="font-size: 1.2rem; color: #e6edf3; line-height: 1.8; margin-bottom: 2rem;">
-                        <strong>À 9 ans</strong>, je découvrais mes premiers ordinateurs. <strong>À 12 ans</strong>, j'étais déjà celui vers qui tout le monde se tournait dans mon réseau pour comprendre cette "nouvelle technologie".
+                        **À 9 ans**, je découvrais mes premiers ordinateurs. **À 12 ans**, j'étais déjà celui vers qui tout le monde se tournait dans mon réseau pour comprendre cette "nouvelle technologie".
                     </p>
                     <p style="font-size: 1.2rem; color: #e6edf3; line-height: 1.8; margin-bottom: 2rem;">
-                        <strong>J'ai grandi avec la technologie</strong> : des premiers PC aux smartphones, du dial-up à la fibre optique, des disquettes au cloud. J'ai vécu chaque évolution, chaque révolution.
+                        **J'ai grandi avec la technologie** : des premiers PC aux smartphones, du dial-up à la fibre optique, des disquettes au cloud. J'ai vécu chaque évolution, chaque révolution.
                     </p>
                     <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border-left: 5px solid #58a6ff; border: 1px solid rgba(255,255,255,0.1);">
                         <p style="font-size: 1.2rem; color: #79c0ff; font-weight: 600;">
@@ -1249,7 +933,6 @@
             </div>
         </section>
 
-        <!-- SERVICES SECTION -->
         <section id="services" class="section services">
             <div class="container">
                 <h2 class="section-title">Comment je peux vous aider</h2>
@@ -1261,8 +944,8 @@
                             <i class="fas fa-wrench"></i>
                         </div>
                         <h3>Réparation Ordinateur</h3>
-                        <p>Ordinateur qui plante, qui démarre plus, qui fait des affaires bizarres ? Je trouve le bobo et je le règle, en vous expliquant ce que je fais étape par étape.</p>
-                        <div class="service-price">À partir de 75$ • Diagnostic gratuit</div>
+                        <p>Ordinateur qui plante, qui ne démarre plus, qui fait des affaires bizarres ? Je trouve le bobo et je le règle, en vous expliquant ce que je fais étape par étape.</p>
+                        <div class="service-price">À partir de 75$ • Diagnostic offert</div>
                         <a href="tel:8193802999" class="btn btn-primary">Patrick, venez voir ça !</a>
                     </div>
 
@@ -1291,7 +974,7 @@
                             <i class="fas fa-graduation-cap"></i>
                         </div>
                         <h3>Cours Personnalisés</h3>
-                        <p>J'vous montre comment utiliser votre ordinateur, tablette ou cellulaire à votre rythme. On se concentre sur ce qui vous intéresse vraiment !</p>
+                        <p>Je vous montre comment utiliser votre ordinateur, tablette ou cellulaire à votre rythme. On se concentre sur ce qui vous intéresse vraiment !</p>
                         <div class="service-price">60$ de l'heure • Pas de pression</div>
                         <a href="tel:8193802999" class="btn btn-primary">Apprenez avec Patrick</a>
                     </div>
@@ -1299,42 +982,6 @@
             </div>
         </section>
 
-        <!-- SECTION SOUTIEN -->
-        <section id="soutien" class="section" style="background: linear-gradient(135deg, #161b22 0%, #21262d 100%); color: white;">
-            <div class="container">
-                <h2 class="section-title">Assistance à distance</h2>
-                <p class="section-subtitle">Téléchargez l'outil sécurisé pour permettre à Patrick de vous aider immédiatement, à distance.</p>
-                
-                <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
-                    <a id="btn-windows" href="Assistance-AIP.exe" class="btn btn-primary" download style="display: none;">
-                        🪟 Télécharger pour Windows
-                    </a>
-                    <a id="btn-mac" href="Assistance-AIP-mac.zip" class="btn btn-secondary" download style="display: none;">
-                        🍎 Télécharger pour macOS
-                    </a>
-                </div>
-                
-                <div style="margin-top: 3rem; text-align: center;">
-                    <div style="background: rgba(255,255,255,0.05); padding: 2rem; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); max-width: 600px; margin: 0 auto;">
-                        <h3 style="color: #58a6ff; margin-bottom: 1rem;">
-                            <i class="fas fa-info-circle"></i> Comment ça marche ?
-                        </h3>
-                        <p style="color: #e6edf3; line-height: 1.6;">
-                            1. Téléchargez l'outil selon votre système<br>
-                            2. Ouvrez le fichier téléchargé<br>
-                            3. Appelez Patrick au (819) 380-2999<br>
-                            4. Patrick pourra voir votre écran et vous aider directement
-                        </p>
-                    </div>
-                </div>
-                
-                <p style="margin-top: 2rem; color: #bbb; font-size: 0.95rem; text-align: center;">
-                    <i class="fas fa-shield-alt"></i> Connexion sécurisée et chiffrée • Aucun mot de passe requis • Connexion directe à Patrick
-                </p>
-            </div>
-        </section>
-
-        <!-- TESTIMONIALS SECTION -->
         <section id="temoignages" class="section testimonials">
             <div class="container">
                 <h2 class="section-title">Ce que mes clients disent de moi</h2>
@@ -1357,7 +1004,6 @@
             </div>
         </section>
 
-        <!-- CONTACT SECTION -->
         <section id="contact" class="section contact">
             <div class="container">
                 <h2 class="section-title">Appelez Patrick pour régler vos tracas !</h2>
@@ -1365,7 +1011,7 @@
                 <a href="tel:8193802999" class="phone-big">
                     <i class="fas fa-phone"></i> (819) 380-2999
                 </a>
-                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #e6edf3;">Lun-Ven 8h-17h • Sam 9h-16h • Dim urgences • Diagnostic gratuit</p>
+                <p style="font-size: 1.2rem; margin-bottom: 3rem; color: #e6edf3;">Lun-Ven 8h-17h • Sam 9h-16h • Dim urgences • Diagnostic offert</p>
                 
                 <div class="contact-info fade-in">
                     <div class="contact-item">
@@ -1404,7 +1050,7 @@
                 <a href="tel:8193802999" class="btn btn-primary" style="font-size: 1.3rem; margin-top: 2rem; margin-right: 1rem;">
                     <i class="fas fa-phone"></i> Appelez Patrick maintenant
                 </a>
-                <a href="https://quickbooks.intuit.com/payments/[TON-LIEN]" class="btn btn-secondary" style="font-size: 1.1rem; margin-top: 2rem;">
+                <a href="https://quickbooks.intuit.com/payments/[VOTRE-LIEN-QUICKBOOKS]" class="btn btn-secondary" style="font-size: 1.1rem; margin-top: 2rem;">
                     💳 Payer une facture
                 </a>
                 <p style="margin-top: 1rem; font-size: 1rem; opacity: 0.9; color: #e6edf3;">
@@ -1415,6 +1061,25 @@
                 </p>
             </div>
         </section>
+    
+        <section class="section" style="background: #161b22; color: white;">
+            <div class="container">
+                <h2 class="section-title">Assistance à distance</h2>
+                <p class="section-subtitle">Téléchargez l'outil sécurisé pour permettre à Patrick de vous aider immédiatement, à distance.</p>
+                <div style="display: flex; gap: 2rem; flex-wrap: wrap; justify-content: center; margin-top: 2rem;">
+                    <a id="btn-windows" href="Assistance-AIP.exe" class="btn btn-primary" download>
+                        🪟 Télécharger pour Windows
+                    </a>
+                    <a id="btn-mac" href="Assistance-AIP-mac.zip" class="btn btn-secondary" download>
+                        🍎 Télécharger pour macOS
+                    </a>
+                </div>
+                <p style="margin-top: 2rem; color: #bbb; font-size: 0.95rem;">
+                    Aucun mot de passe requis. Connexion directe et sécurisée à Patrick.
+                </p>
+            </div>
+        </section>
+
     </main>
 
     <footer class="footer">
@@ -1424,209 +1089,64 @@
     </footer>
 
     <script>
-        // Header scroll effect
-        window.addEventListener('scroll', function() {
+        document.addEventListener('DOMContentLoaded', function() {
+            // Header scroll effect
             const header = document.getElementById('header');
-            if (window.scrollY > 100) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth scrolling
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Scroll reveal animation
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // === ROBIT ASSISTANT ===
-        let robitResponses = [
-            "Bonjour ! Patrick est disponible pour vous aider avec vos problèmes informatiques. Voulez-vous prendre rendez-vous ?",
-            "Je peux vous aider à comprendre nos services. Quel type de problème informatique avez-vous ?",
-            "Patrick se spécialise dans la réparation d'ordinateurs, les cours personnalisés et la protection antivirus. Que puis-je vous expliquer ?",
-            "Excellente question ! Patrick offre un service à domicile dans votre région. Voulez-vous son numéro ?",
-            "Patrick a 41 ans d'expérience et il est très patient. Il explique tout en français simple !",
-            "Pour une urgence, vous pouvez appeler Patrick au (819) 380-2999. Il est disponible 7 jours sur 7.",
-            "Patrick peut vous aider avec ça ! Il se déplace à domicile avec tous ses outils. Très pratique !",
-            "C'est exactement le genre de problème que Patrick adore résoudre. Il va vous expliquer tout étape par étape.",
-            "Patrick offre aussi des cours personnalisés. Parfait pour apprendre à votre rythme !",
-            "Vous pouvez télécharger l'outil d'assistance à distance dans la section 'Soutien' pour que Patrick vous aide immédiatement."
-        ];
-
-        function toggleRobit() {
-            const chat = document.getElementById('robitChat');
-            chat.classList.toggle('active');
-            
-            if (chat.classList.contains('active')) {
-                document.getElementById('robitInput').focus();
-            }
-        }
-
-        function sendRobitMessage() {
-            const input = document.getElementById('robitInput');
-            const message = input.value.trim();
-            
-            if (message) {
-                addRobitMessage(message, 'user');
-                input.value = '';
-                
-                // Simulate typing
-                setTimeout(() => {
-                    addTypingIndicator();
-                }, 500);
-                
-                // Send bot response
-                setTimeout(() => {
-                    removeTypingIndicator();
-                    const response = robitResponses[Math.floor(Math.random() * robitResponses.length)];
-                    addRobitMessage(response, 'bot');
-                }, 1500);
-            }
-        }
-
-        function addRobitMessage(text, sender) {
-            const messages = document.getElementById('robitMessages');
-            const messageDiv = document.createElement('div');
-            messageDiv.className = `robit-message ${sender}`;
-            messageDiv.textContent = text;
-            messages.appendChild(messageDiv);
-            messages.scrollTop = messages.scrollHeight;
-        }
-
-        function addTypingIndicator() {
-            const messages = document.getElementById('robitMessages');
-            const typingDiv = document.createElement('div');
-            typingDiv.className = 'robit-message bot typing';
-            typingDiv.id = 'typing-indicator';
-            typingDiv.innerHTML = `
-                <span class="typing-indicator"></span>
-                <span class="typing-indicator"></span>
-                <span class="typing-indicator"></span>
-            `;
-            messages.appendChild(typingDiv);
-            messages.scrollTop = messages.scrollHeight;
-        }
-
-        function removeTypingIndicator() {
-            const typing = document.getElementById('typing-indicator');
-            if (typing) {
-                typing.remove();
-            }
-        }
-
-        function handleRobitEnter(event) {
-            if (event.key === 'Enter') {
-                sendRobitMessage();
-            }
-        }
-
-        // === EASTER EGG DASHBOARD ===
-        let easterEggSequence = [];
-        let requiredSequence = ['Shift', 'KeyA', 'KeyW', 'KeyD', 'Space'];
-        let clickCount = 0;
-        let clickTarget = 5;
-        let sequenceTimeout;
-
-        function resetEasterEgg() {
-            easterEggSequence = [];
-            clickCount = 0;
-            clearTimeout(sequenceTimeout);
-        }
-
-        function checkEasterEggSequence() {
-            if (easterEggSequence.length === requiredSequence.length) {
-                let matches = true;
-                for (let i = 0; i < requiredSequence.length; i++) {
-                    if (easterEggSequence[i] !== requiredSequence[i]) {
-                        matches = false;
-                        break;
-                    }
-                }
-                
-                if (matches) {
-                    // Sequence correct, now wait for 5 clicks
-                    document.addEventListener('click', handleEasterEggClick);
-                    // Reset after 5 seconds if no clicks
-                    sequenceTimeout = setTimeout(resetEasterEgg, 5000);
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > 100) {
+                    header.classList.add('scrolled');
                 } else {
-                    resetEasterEgg();
+                    header.classList.remove('scrolled');
                 }
-            }
-        }
+            });
 
-        function handleEasterEggClick() {
-            clickCount++;
-            
-            if (clickCount >= clickTarget) {
-                // Easter egg activated!
-                document.getElementById('dashboard').classList.add('active');
-                document.removeEventListener('click', handleEasterEggClick);
-                resetEasterEgg();
-            }
-        }
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        // Close mobile menu if open
+                        const navMenu = document.getElementById('navMenu');
+                        if (navMenu.classList.contains('active')) {
+                            navMenu.classList.remove('active');
+                        }
+                        
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
 
-        function closeDashboard() {
-            document.getElementById('dashboard').classList.remove('active');
-        }
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobileMenuButton');
+            const navMenu = document.getElementById('navMenu');
 
-        // Listen for easter egg key sequence
-        document.addEventListener('keydown', function(event) {
-            // Handle Shift key
-            if (event.key === 'Shift') {
-                easterEggSequence.push('Shift');
-            }
-            // Handle other keys
-            else if (event.code === 'KeyA' || event.code === 'KeyW' || event.code === 'KeyD' || event.code === 'Space') {
-                easterEggSequence.push(event.code);
-            }
-            // Wrong key, reset
-            else {
-                resetEasterEgg();
-                return;
-            }
-            
-            // Check if sequence is getting too long
-            if (easterEggSequence.length > requiredSequence.length) {
-                resetEasterEgg();
-                return;
-            }
-            
-            checkEasterEggSequence();
-            
-            // Reset after 3 seconds of inactivity
-            clearTimeout(sequenceTimeout);
-            sequenceTimeout = setTimeout(resetEasterEgg, 3000);
-        });
+            mobileMenuButton.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
 
-        // === DÉTECTION OS POUR BOUTONS D'ASSISTANCE ===
-        document.addEventListener('DOMContentLoaded', function () {
+            // Scroll reveal animation
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+
+            // === DÉTECTION OS POUR BOUTONS D'ASSISTANCE ===
             const os = navigator.userAgent;
             const winBtn = document.getElementById('btn-windows');
             const macBtn = document.getElementById('btn-mac');
@@ -1638,19 +1158,9 @@
                 macBtn.style.display = 'inline-flex';
                 winBtn.style.display = 'none';
             } else {
+                // Default fallback: show both if OS is not clearly detected
                 winBtn.style.display = 'inline-flex';
                 macBtn.style.display = 'inline-flex';
-            }
-        });
-
-        // Close dashboard when clicking outside
-        document.addEventListener('click', function(event) {
-            const dashboard = document.getElementById('dashboard');
-            const dashboardContent = document.querySelector('.dashboard-content');
-            
-            if (dashboard.classList.contains('active') && 
-                !dashboardContent.contains(event.target)) {
-                closeDashboard();
             }
         });
     </script>
